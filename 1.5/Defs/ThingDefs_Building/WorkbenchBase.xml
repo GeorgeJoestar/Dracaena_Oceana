@@ -17,6 +17,7 @@
 			<drawOffsetWest>(0.2,-1,0)</drawOffsetWest>
 			-->
 			<drawOffsetSouth>(0,0,0.3)</drawOffsetSouth>
+			<altitudeLayer>BuildingOnTop</altitudeLayer>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -150,6 +151,7 @@
 			<drawSize>(4.3,4.3)</drawSize>
 			<drawOffset>(0,0,0.7)</drawOffset>
 			<drawOffsetSouth>(0,0,0.3)</drawOffsetSouth>
+			<altitudeLayer>BuildingOnTop</altitudeLayer>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -216,6 +218,7 @@
 			<drawSize>(4.3,4.3)</drawSize>
 			<drawOffset>(0,0,0.7)</drawOffset>
 			<drawOffsetSouth>(0,0,0.3)</drawOffsetSouth>
+			<altitudeLayer>BuildingOnTop</altitudeLayer>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -282,6 +285,7 @@
 			<drawSize>(4.3,4.3)</drawSize>
 			<drawOffset>(0,0,0.7)</drawOffset>
 			<drawOffsetSouth>(0,0,0.3)</drawOffsetSouth>
+			<altitudeLayer>BuildingOnTop</altitudeLayer>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
