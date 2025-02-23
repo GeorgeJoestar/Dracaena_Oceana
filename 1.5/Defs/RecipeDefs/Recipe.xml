@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <RecipeDef>
-    <defName>Chemfuel_Make_Steel</defName>
-    <label>Chemfuel 50 to Steel 150</label>
+    <defName>Chemfuel_Make_Steel_1</defName>
+    <label>50油变150铁</label>
     <description>油变铁啊</description>
     <jobString>Synthesizing.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -10,9 +10,10 @@
     <soundWorking>Recipe_Machining</soundWorking>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <recipeUsers>
-      <li>RK_HandTailoringBench</li>
-      <li>test_workbench_3</li>
-      <li>test_workbench_1</li>
+      <li>Dracaena_workbench_1</li>
+      <li>Dracaena_workbench_3</li>
+      <li>Dracaena_workbench_4</li>
+      <li>Dracaena_workbench_5</li>
     </recipeUsers>
     <skillRequirements>
       <Crafting>3</Crafting>
