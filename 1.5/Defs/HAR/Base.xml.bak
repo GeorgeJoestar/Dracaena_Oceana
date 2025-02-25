@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+        <defName>ExampleAlien</defName>
+        <label>example alien</label>
+        <description>This is an example alien race that was created for the wiki tutorial.</description>
+
+        
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>1000</lifeExpectancy>
+	  <fleshType>Normal</fleshType>
+	  <body>Human</body>
+      <bloodDef>Filth_Blood</bloodDef>	
+      <meatColor>(219, 105, 82)</meatColor>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHealthScale>0.85</baseHealthScale>
+      <baseHungerRate>1.0</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>18</gestationPeriodDays>
+	  
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+    <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+    <li>(14,0)</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+    <li>(16,100)</li>
+    <li>(35,100)</li>
+    <li>(50,30)</li>
+    <li>(70,18)</li>
+    <li>(80,10)</li>
+    <li>(90,3)</li>
+    <li>(100,0)</li>
+       </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+      <renderTree>Humanlike</renderTree>
+    </race>
+
+        <alienRace>
+			<generalSettings>
+                <maleGenderProbability>0</maleGenderProbability>
+
+				<alienPartGenerator>
+                    <headTypes Inherit="False">
+                    <li>headtest11</li>
+                    </headTypes>
+
+
+                    <bodyTypes>
+                        <li>Female</li>
+					    <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+                        <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+                    </bodyTypes>
+				</alienPartGenerator>
+
+            </generalSettings>
+
+
+
+
+
+
+            <graphicPaths>
+            <!-- Graphic Paths are listed here -->
+                <body>
+                <path>Tex/Body/DracobodyH1</path>
+                <!-- Extension Graphics here -->
+                </body>
+            </graphicPaths>
+        </alienRace>        
+    </AlienRace.ThingDef_AlienRace>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>headtest11</defName>
+		<graphicPath>Tex/Head/headtest</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+</Defs>
