@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Drac_bench_smithy.label>龙娘锻炉</Drac_bench_smithy.label>
+  <Drac_bench_smithy.description>中文占位</Drac_bench_smithy.description>
+  
+  <Drac_bench_stove.label>龙娘厨台</Drac_bench_stove.label>
+  <Drac_bench_stove.description>中文占位</Drac_bench_stove.description>
+  
+  <Drac_bench_tailor.label>龙娘裁缝桌</Drac_bench_tailor.label>
+  <Drac_bench_tailor.description>中文占位</Drac_bench_tailor.description>
+  
+  <Drac_bench_herb.label>龙娘草药桌</Drac_bench_herb.label>
+  <Drac_bench_herb.description>中文占位</Drac_bench_herb.description>
+</LanguageData>
