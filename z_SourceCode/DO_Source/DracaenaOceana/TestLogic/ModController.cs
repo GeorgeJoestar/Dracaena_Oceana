@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorldProj.WelcomeScreen;
+using Verse;
 
 namespace RimWorldProj.TestLogic
 {
@@ -11,7 +12,7 @@ namespace RimWorldProj.TestLogic
 
         private void ShowHelloWorldWindow()
         {
-            Find.WindowStack.Add(new TestWindow.HelloWorldWindow());
+            Find.WindowStack.Add(new WelcomeWindow());
         }
     }
 }

@@ -12,6 +12,8 @@
         <AssemblyName>DracaenaOceana</AssemblyName>
         <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
+        <LangVersion>12</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,12 +35,33 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>References\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="0PrepatcherAPI">
+          <HintPath>References\0PrepatcherAPI.dll</HintPath>
+        </Reference>
+        <Reference Include="0PrepatcherDataAssembly">
+          <HintPath>References\0PrepatcherDataAssembly.dll</HintPath>
+        </Reference>
+        <Reference Include="1Fishery">
+          <HintPath>References\1Fishery.dll</HintPath>
+        </Reference>
         <Reference Include="Assembly-CSharp">
           <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="PrepatcherImpl">
+          <HintPath>References\PrepatcherImpl.dll</HintPath>
+        </Reference>
+        <Reference Include="Prestarter">
+          <HintPath>References\Prestarter.dll</HintPath>
         </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe">
+          <HintPath>References\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        </Reference>
         <Reference Include="System.Xml"/>
         <Reference Include="Unity.TextMeshPro">
           <HintPath>..\..\..\RimWorldWin64_Data\Managed\Unity.TextMeshPro.dll</HintPath>
@@ -79,8 +102,13 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="RNGscript\MilianComponentResearchUtility.cs" />
+        <Compile Include="RNGscript\Recipe_MilianComponentResearch.cs" />
+    <Compile Include="TestLogic\CustomWindow.cs" />
         <Compile Include="TestLogic\ModController.cs" />
         <Compile Include="TestLogic\TestWindow.cs" />
+        <Compile Include="TestLogic\WelcomeWindow.cs" />
+        <Compile Include="TestLogic\Workbench.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
