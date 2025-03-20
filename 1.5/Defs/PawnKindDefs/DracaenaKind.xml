@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>Example_AlienColonist</defName>
+		<label>colonist</label>
+		<race>Dracaena</race>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

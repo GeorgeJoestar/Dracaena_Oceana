@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ======================= -->
+  <!--  ALIEN RACE DEFINITION  -->
+  <!-- ======================= -->
+
+  <AlienRace.ThingDef_AlienRace ParentName="Human">
+    <defName>Dracaena</defName>
+    <label>Dracaena Oceana</label>
+    <description>Sample Description</description>
+
+    <race>
+      <intelligence>Humanlike</intelligence>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <body>Human</body>
+      <foodType>OmnivoreHuman</foodType>
+      <!-- Adjust stats or other fields as desired -->
+    </race>
+
+    <alienRace>
+
+      <!-- ============= -->
+      <!-- GRAPHIC PATHS -->
+      <!-- ============= -->
+    <graphicPaths>
+		<head>Things/Pawn/DracoRace/Head/</head>
+		<body>Things/Pawn/DracoRace/Body/DracoheadBody</body>
+
+      <!-- Graphic Paths are listed here -->
+    </graphicPaths>
+
+      <!-- ========================== -->
+      <!-- BODY ADDONS (Tail, Ears)  -->
+      <!-- ========================== -->
+      <generalSettings>
+
+        <alienPartGenerator>
+		  <bodyTypes>
+            <li>Female</li>
+          </bodyTypes>
+		  <headTypes Inherit="False">
+            <li>DracoHead1</li>
+            <li>DracoHead2</li>
+            <li>DracoHead3</li>
+          </headTypes>
+          <bodyAddons>
+
+            <!-- TAIL -->
+            <li>
+              <!-- This path looks for DracoheadTail_north.png, DracoheadTail_south.png, DracoheadTail_east.png, DracoheadTail_west.png -->
+              <path>Things/Pawn/DracoRace/Body/DracoheadTail</path>
+              <offsets>
+                <south>
+                  <offset>(0, -0.2)</offset>
+                </south>
+                <north>
+                  <offset>(0, -0.2)</offset>
+                </north>
+                <east>
+                  <offset>(0, -0.2)</offset>
+                </east>
+                <!-- west mirrors east if omitted -->
+              </offsets>
+            </li>
+
+            <!-- EARS -->
+            <li>
+              <!-- DracoheadEars1_north.png, DracoheadEars1_south.png, DracoheadEars1_east.png, DracoheadEars1_west.png -->
+              <path>Things/Pawn/DracoRace/Head/DracoheadEars1</path>
+              <!-- Slight offset upward so it aligns with the top of the head (tweak as needed) -->
+              <offsets>
+                <south>
+                  <offset>(0, 0.15)</offset>
+                </south>
+                <north>
+                  <offset>(0, 0.15)</offset>
+                </north>
+                <east>
+                  <offset>(0, 0.15)</offset>
+                </east>
+              </offsets>
+            </li>
+
+            <!-- CORNER (Horns) -->
+            <li>
+              <!-- DracoheadCorner1_north.png, DracoheadCorner1_south.png, DracoheadCorner1_east.png -->
+              <path>Things/Pawn/DracoRace/Head/DracoheadCorner1</path>
+              <offsets>
+                <south>
+                  <offset>(0, 0.12)</offset>
+                </south>
+                <north>
+                  <offset>(0, 0.12)</offset>
+                </north>
+                <east>
+                  <offset>(0, 0.12)</offset>
+                </east>
+              </offsets>
+            </li>
+
+            <li>
+              <name>DracoheadHair1</name>
+              <userCustomizable>true</userCustomizable>
+              <path>Things/Pawn/DracoRace/Hair/Hair1/DracoheadHair1</path>
+              <inFrontOfBody>true</inFrontOfBody>
+              <layerInvert>false</layerInvert>
+              <colorChannel>hair</colorChannel>
+              <defaultOffset>Center</defaultOffset>
+              <drawSize>1</drawSize>
+              <alignWithHead>true</alignWithHead>
+              <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+              <conditions>
+                <BodyPart>
+                  <bodyPart>Head</bodyPart>
+                </BodyPart>
+                <Apparel>
+                  <hiddenUnderApparelTag>
+                  </hiddenUnderApparelTag>
+                </Apparel>
+                <Posture>
+                  <drawnStanding>true</drawnStanding>
+                  <drawnInBed>true</drawnInBed>
+                  <drawnLaying>true</drawnLaying>
+                </Posture>
+                <RotStage>Fresh,Rotting</RotStage>
+              </conditions>
+              <offsets>
+                <west>
+                  <layerOffset>-0.274</layerOffset>
+                </west>
+                <south>
+                  <layerOffset>-0.274</layerOffset>
+                </south>
+                <north>
+                  <layerOffset>-0.274</layerOffset>
+                </north>
+                <east>
+                  <layerOffset>-0.274</layerOffset>
+                </east>
+              </offsets>
+            </li>
+          </bodyAddons>
+		  
+			<colorChannels>            <!--颜色设定-->
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>100</weight>
+                    <only>RGBA(255,255,255)</only>
+                  </li>
+                </options>
+              </first>
+              <second Class="ColorGenerator_Options">
+                <options>
+                  <!--原色-->
+                  <li>
+                    <weight>20</weight>
+                    <only>RGBA(255,255,255)</only>
+                  </li>
+                  <!---->
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,255,100)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,250,100)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,245,100)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,240,100)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,235,100)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,230,100)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,225,100)</only>
+                  </li>
+                  <!---->
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,255)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,250)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,245)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,240)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,235)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,230)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,225)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,220)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(255,195,215)</only>
+                  </li>
+                  <!---->
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,255)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,250)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,245)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,240)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,235)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,230)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,225)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,220)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,215)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,210)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,205)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,200)</only>
+                  </li>
+                  <!---->
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,255,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,250,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,245,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,240,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,235,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,230,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,225,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,220,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,215,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,210,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,205,195)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(195,200,195)</only>
+                  </li>
+                </options>
+              </second>
+            </li>
+            <li>
+              <name>hair</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <!-- == -->
+                  <li>
+                    <weight>4</weight>
+                    <min>RGB(255,200,200)</min>
+                    <max>RGB(255,255,255)</max>
+                  </li>
+                  <li>
+                    <weight>4</weight>
+                    <min>RGB(200,255,200)</min>
+                    <max>RGB(255,255,255)</max>
+                  </li>
+                  <li>
+                    <weight>4</weight>
+                    <min>RGB(200,200,255)</min>
+                    <max>RGB(255,255,255)</max>
+                  </li>
+                  <!-- == -->
+                  <li>
+                    <weight>10</weight>
+                    <min>RGB(255,255,200)</min>
+                    <max>RGB(255,255,200)</max>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <min>RGB(255,200,255)</min>
+                    <max>RGB(255,200,255)</max>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <min>RGB(200,255,255)</min>
+                    <max>RGB(200,255,255)</max>
+                  </li>
+                  <!-- == -->
+                  <li>
+                    <weight>10</weight>
+                    <min>RGB(218,210,220)</min>
+                    <max>RGB(218,255,255)</max>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <min>RGB(210,210,150)</min>
+                    <max>RGB(255,255,150)</max>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <min>RGB(240,140,150)</min>
+                    <max>RGB(255,210,150)</max>
+                  </li>
+                </options>
+              </first>
+              <second Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGB(255,255,255)</only>
+                  </li>
+                </options>
+              </second>
+            </li>
+          </colorChannels>
+        </alienPartGenerator>
+      </generalSettings>
+
+      <!-- =============== -->
+      <!-- STYLE SETTINGS -->
+      <!-- =============== -->
+      <!-- We override hair usage so that the game actually offers Draco hair styles. -->
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>true</hasStyle>
+            <!-- We define a custom style tag so only Draco hair shows up (or we could allow vanilla hair too). -->
+            <styleTagsOverride>
+              <li>DracoHair</li>
+            </styleTagsOverride>
+          </value>
+        </li>
+		 <li>
+		   <key>BeardDef</key>
+		   <value>
+			 <hasStyle>false</hasStyle>
+		   </value>
+		 </li>
+      </styleSettings>
+
+    </alienRace>
+  </AlienRace.ThingDef_AlienRace>
+
+  <!-- ================================== -->
+  <!--  PAWN KIND DEF (so it can spawn)   -->
+  <!-- ================================== -->
+
+
+  <!-- ======================================= -->
+  <!--  HAIR DEFS for Draco Hair1, Hair2, Hair3 -->
+  <!-- ======================================= -->
+  <!-- These let the game treat each set of textures in Hair1/Hair2/Hair3 as a selectable hairstyle. -->
+
+
+  <!-- <hairdef> -->
+    <!-- <defname>dracoheadhair2</defname> -->
+    <!-- <texpath>things/pawn/dracorace/hair2/dracoheadhair2</texpath> -->
+    <!-- <hairgender>female</hairgender> -->
+    <!-- <styletags> -->
+      <!-- <li>dracohair</li> -->
+    <!-- </styletags> -->
+  <!-- </hairdef> -->
+
+  <!-- <hairdef> -->
+    <!-- <defname>dracoheadhair3</defname> -->
+    <!-- <texpath>things/pawn/dracorace/hair3/dracoheadhair3</texpath> -->
+    <!-- <hairgender>female</hairgender> -->
+    <!-- <styletags> -->
+      <!-- <li>dracohair</li> -->
+    <!-- </styletags> -->
+  <!-- </hairdef> -->
+
+</Defs>
