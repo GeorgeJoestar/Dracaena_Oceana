@@ -4,7 +4,7 @@
     <!-- Bench: Drac_bench_smithy -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_smithy</defName>
-        <label></label>
+        <label>aaaaa</label>
         <description>Drac_bench_smithy.description</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
@@ -71,8 +71,8 @@
     <!-- Bench: Drac_bench_stove -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_stove</defName>
-        <label></label>
-        <description></description>
+        <label>aaa</label>
+        <description>aaaa</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/FueledStove</texPath>

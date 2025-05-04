@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>Example_AlienColonist</defName>
+		<defName>Dracaena_Oceana</defName>
 		<label>colonist</label>
 		<race>Dracaena</race>
 		<defaultFactionType>PlayerColony</defaultFactionType>

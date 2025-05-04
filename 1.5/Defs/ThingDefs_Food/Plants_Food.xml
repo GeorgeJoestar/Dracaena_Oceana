@@ -29,6 +29,7 @@
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>RawVegetable_Eat</ingestSound>
         </ingestible>
+        <socialPropernessMatters>true</socialPropernessMatters>
         <!-- assign to our new WheatMod category -->
         <thingCategories>
             <li>WheatMod_Category</li>
@@ -46,6 +47,7 @@
         <graphicData>
             <texPath>Things/Item/Resource/PlantFoodRaw/WheatEar</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>(1.25,1.25)</drawSize>
         </graphicData>
         <statBases>
             <Nutrition>0.05</Nutrition>
@@ -60,10 +62,6 @@
                 <rotDestroys>true</rotDestroys>
             </li>
         </comps>
-        <!-- ensure it shows up in our WheatMod category -->
-        <thingCategories>
-            <li>WheatMod_Category</li>
-        </thingCategories>
     </ThingDef>
 
     <!-- 4) Wheat plant, modeled on vanilla corn but 12 days / yield 30 -->
