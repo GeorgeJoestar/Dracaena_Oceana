@@ -270,6 +270,8 @@
         <Compile Include="RNGscript\MilianComponentResearchUtility.cs" />
         <Compile Include="RNGscript\Recipe_MilianComponentResearch.cs" />
     <Compile Include="TestLogic\CustomWindow.cs" />
+    <Compile Include="TestLogic\DefaultWindow.cs" />
+    <Compile Include="TestLogic\HelpUtils.cs" />
         <Compile Include="TestLogic\ModController.cs" />
         <Compile Include="TestLogic\TestWindow.cs" />
         <Compile Include="TestLogic\WelcomeWindow.cs" />
