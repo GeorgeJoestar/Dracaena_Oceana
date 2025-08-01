@@ -21,7 +21,7 @@
             </graphicPaths>
             <generalSettings>
                 <immuneToXenophobia>false</immuneToXenophobia>
-                <maleGenderProbability>0.0000000000000001</maleGenderProbability>
+                <maleGenderProbability>0</maleGenderProbability>
                 <disallowedTraits>
                     <li>
                         <defName Degree="-1">Beauty</defName>
@@ -56,7 +56,7 @@
                     <headTypes Inherit="False">
                         <li>DracoHead1</li>
                         <li>DracoHead2</li>
-                        <!-- <li>DracoHead3</li> -->
+                        <li>DracoHead3</li>
                     </headTypes>
                     <bodyAddons>
                         <li>
@@ -157,174 +157,9 @@
                             </first>
                             <second Class="ColorGenerator_Options">
                                 <options>
-                                    <!--原色-->
                                     <li>
                                         <weight>20</weight>
                                         <only>RGBA(255,255,255)</only>
-                                    </li>
-                                    <!---->
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,255,100)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,250,100)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,245,100)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,240,100)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,235,100)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,230,100)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,225,100)</only>
-                                    </li>
-                                    <!---->
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,255)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,250)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,245)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,240)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,235)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,230)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,225)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,220)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(255,195,215)</only>
-                                    </li>
-                                    <!---->
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,255)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,250)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,245)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,240)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,235)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,230)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,225)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,220)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,215)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,210)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,205)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,200)</only>
-                                    </li>
-                                    <!---->
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,255,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,250,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,245,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,240,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,235,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,230,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,225,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,220,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,215,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,210,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,205,195)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGBA(195,200,195)</only>
                                     </li>
                                 </options>
                             </second>
