@@ -1,18 +1,34 @@
-﻿using RimWorldProj.WelcomeScreen;
+﻿using RimWorld;
+using UnityEngine;
 using Verse;
+using RimWorldProj.WelcomeScreen;  
+using HarmonyLib;
 
 namespace RimWorldProj.TestLogic
 {
-    public class ModController : Mod
+    [StaticConstructorOnStartup]
+    public static class MainMenuPatches
     {
-        public ModController(ModContentPack content) : base(content)
+        static MainMenuPatches()
         {
-            LongEventHandler.QueueLongEvent(ShowHelloWorldWindow, "Initializing", false, null);
+            Harmony harmony = new ("com.rimworldproj.testlogic");
+            harmony.PatchAll();
         }
 
-        private void ShowHelloWorldWindow()
+        [HarmonyPatch(typeof(MainMenuDrawer), "DoMainMenuControls")]
+        public static class MainMenuDrawerDoMainMenuControlsPatch
         {
-            Find.WindowStack.Add(new WelcomeWindow());
+            public static void Postfix()
+            {
+                float buttonWidth = 150f;
+                float buttonHeight = 35f;
+                Rect buttonRect = new Rect(UI.screenWidth - buttonWidth - 10f, UI.screenHeight - buttonHeight - 10f, buttonWidth, buttonHeight);
+                
+                if (Widgets.ButtonText(buttonRect, "Reopen Window"))
+                {
+                    Find.WindowStack.Add(new WelcomeWindow());
+                }
+            }
         }
     }
 }

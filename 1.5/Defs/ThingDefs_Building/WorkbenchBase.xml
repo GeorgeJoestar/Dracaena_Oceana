@@ -130,6 +130,10 @@
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
+        <recipes>
+            <li>Make_UnfermentedDough</li>
+            <li>Make_FermentedDough</li>
+        </recipes>
         <researchPrerequisites>
             <li>ComplexClothing</li>
         </researchPrerequisites>
