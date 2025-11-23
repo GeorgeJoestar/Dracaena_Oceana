@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- 1) New top-level category under Root for all mod items -->
+    <ThingCategoryDef>
+        <defName>WheatMod_Category</defName>
+        <label>Wheat Mod Items</label>
+        <parent>Root</parent>
+    </ThingCategoryDef>
+
+    <!-- 2) Abstract base for all wheat products -->
+    <ThingDef Abstract="True" Name="WheatProductBase" ParentName="OrganicProductBase">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>6</DeteriorationRate>
+            <Mass>0.03</Mass>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <!-- ingestible so it can be used in custom recipes or eaten raw -->
+        <ingestible>
+            <preferability>RawBad</preferability>
+            <tasteThought>AteRawFood</tasteThought>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>RawVegetable_Eat</ingestSound>
+        </ingestible>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <!-- assign to our new WheatMod category -->
+        <thingCategories>
+            <li>WheatMod_Category</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!-- 3) Raw wheat ear produce -->
+    <ThingDef ParentName="WheatProductBase">
+        <defName>WheatEar</defName>
+        <label>wheat ear</label>
+        <description>Raw wheat ear, harvested from mature wheat plants.</description>
+        <!-- <soundInteract>Grain_Drop</soundInteract> -->
+        <!-- <soundDrop>Grain_Drop</soundDrop> -->
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/WheatEar</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>(1.25,1.25)</drawSize>
+        </graphicData>
+        <statBases>
+            <Nutrition>0.05</Nutrition>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <foodType>Seed</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- 4) Wheat plant, modeled on vanilla corn but 12 days / yield 30 -->
+    <ThingDef ParentName="PlantBase">
+        <defName>Plant_Wheat</defName>
+        <label>wheat plant</label>
+        <description>A tall grain plant which produces ears of wheat. It takes longer to mature but yields a high volume of food.</description>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Nutrition>0.4</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/WheatPlant</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>14</pathCost>
+        <ingestible />
+        <plant>
+            <fertilityMin>0.70</fertilityMin>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>WheatEar</harvestedThingDef>
+            <harvestYield>30</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <topWindExposure>0.35</topWindExposure>
+            <growDays>12</growDays>
+            <immatureGraphicPath>Things/Plant/WheatPlant_Immature</immatureGraphicPath>
+            <visualSizeRange>0.5~1.4</visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <humanFoodPlant>true</humanFoodPlant>
+        </plant>
+    </ThingDef>
+
+    <!-- ================================================================= -->
+    <!--                              ITEMS                                -->
+    <!-- ================================================================= -->
+
+    <ThingDef ParentName="WheatProductBase">
+        <defName>Flour</defName>
+        <label>flour</label>
+        <description>Finely ground wheat. Edible raw but leaves you feeling sad.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/PlantFoodRaw/Flour</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.8</MarketValue>
+            <Mass>0.02</Mass>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>RawBad</preferability>
+            <tasteThought>AteRawFood</tasteThought>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>RawVegetable_Eat</ingestSound>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>80</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>Yeast</defName>
+        <label>yeast</label>
+        <description>A leavening agent produced by fermenting flour.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/PlantFoodRaw/Yeast</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>15</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>WheatMod_Category</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>UnfermentedDough</defName>
+        <label>unfermented dough</label>
+        <description>Simple dough made from flour. Must be baked before eating.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/PlantFoodRaw/UnfermentedDough</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.0</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>2</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>WheatMod_Category</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>FermentedDough</defName>
+        <label>fermented dough</label>
+        <description>Dough enriched with yeast. Ready for baking.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/PlantFoodRaw/FermentedDough</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.5</MarketValue>
+            <Mass>0.06</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>2</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>WheatMod_Category</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="MealCooked">
+        <defName>MilitarisBread</defName>
+        <label>militaris bread</label>
+        <description>A dense bread baked from simple dough. Tastes stodgy.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Meal/MilitarisBread</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <WorkToMake>600</WorkToMake>
+            <Nutrition>0.6</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealSimple</preferability>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <tasteThought>AteMilitarisBread</tasteThought>
+<!--            <eatingSpeedFactor>0.9</eatingSpeedFactor>-->
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>4</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="MealCooked">
+        <defName>LeavenedBread</defName>
+        <label>leavened bread</label>
+        <description>A light, airy bread fermented with yeast. Boosts morale.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Meal/LeavenedBread</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>8</MarketValue>
+            <WorkToMake>800</WorkToMake>
+            <Nutrition>1.0</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealFine</preferability>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <tasteThought>AteLeavenedBread</tasteThought>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>4</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+            <!-- Buff application via hediff is implemented elsewhere -->
+        </comps>
+    </ThingDef>
+
+
+    <!-- ================================================================= -->
+    <!--                             BUILDINGS                             -->
+    <!-- ================================================================= -->
+
+    <ThingDef ParentName="BenchBase">
+        <defName>FermentationBucket</defName>
+        <label>fermentation bucket</label>
+        <description>A simple vessel for converting flour into yeast.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Production/FermentationBucket</texPath>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <WorkToBuild>500</WorkToBuild>
+            <WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <designationCategory>Dracaena_Oceana_Category</designationCategory>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <recipes>
+            <li>Make_Yeast</li>
+            <li>Make_Yeast_Bulk</li>
+        </recipes>
+    </ThingDef>
+
+    <!-- Oven: multi‐graphic workbench for baking -->
+    <ThingDef ParentName="BenchBase">
+        <defName>Oven</defName>
+        <label>oven</label>
+        <description>A properly heated oven for baking bread and pastries.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Production/FueledOven</texPath>
+            <drawSize>(1,2)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <WorkToBuild>2000</WorkToBuild>
+            <WorkTableWorkSpeedFactor>1.2</WorkTableWorkSpeedFactor>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <designationCategory>Dracaena_Oceana_Category</designationCategory>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <recipes>
+            <li>Make_MilitarisBread</li>
+            <li>Make_LeavenedBread</li>
+        </recipes>
+    </ThingDef>
+
+
+    <!-- ================================================================= -->
+    <!--                             RECIPES                               -->
+    <!-- ================================================================= -->
+
+    <!-- Flour recipes at Drac_bench_herb -->
+    <RecipeDef Name="Make_Flour">
+        <defName>Make_Flour</defName>
+        <label>make flour</label>
+        <description>Grind wheat ears into flour.</description>
+        <jobString>Making flour.</jobString>
+        <workAmount>200</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+<!--        <effectWorking>Grind</effectWorking>-->
+<!--        <soundWorking>Recipe_Grind</soundWorking>-->
+        <workSkill>Crafting</workSkill>
+        <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+<!--        <researchPrerequisite>WheatProcessing</researchPrerequisite>-->
+        <skillRequirements>
+            <Crafting>2</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WheatEar</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <Flour>1</Flour>
+        </products>
+        <recipeUsers>
+            <li>Drac_bench_herb</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_Flour">
+        <defName>Make_Flour_Bulk</defName>
+        <label>make flour x10→13</label>
+        <description>Process 10 wheat ears into 13 flour.</description>
+        <workAmount>800</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WheatEar</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <Flour>13</Flour>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_Flour">
+        <defName>Make_Flour_Massive</defName>
+        <label>make flour x50→80</label>
+        <description>Mass-process 50 wheat ears into 80 flour.</description>
+        <workAmount>4000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WheatEar</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <Flour>80</Flour>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="Make_Yeast">
+        <defName>Make_Yeast</defName>
+        <label>make yeast</label>
+        <description>Ferment flour into yeast.</description>
+        <jobString>Fermenting yeast.</jobString>
+        <workAmount>300</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+<!--        <soundWorking>Recipe_CookMeal</soundWorking>-->
+        <workSkill>Crafting</workSkill>
+        <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Flour</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <Yeast>1</Yeast>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Make_Yeast">
+        <defName>Make_Yeast_Bulk</defName>
+        <label>make yeast x30→15</label>
+        <description>Bulk-ferment flour into yeast.</description>
+        <workAmount>1500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Flour</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <products>
+            <Yeast>15</Yeast>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="Make_UnfermentedDough">
+        <defName>Make_UnfermentedDough</defName>
+        <label>make unfermented dough</label>
+        <description>Mix flour into simple dough.</description>
+        <jobString>Making dough.</jobString>
+        <workAmount>250</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+<!--        <soundWorking>Recipe_CookMeal</soundWorking>-->
+        <workSkill>Cooking</workSkill>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Flour</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <UnfermentedDough>1</UnfermentedDough>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="Make_FermentedDough">
+        <defName>Make_FermentedDough</defName>
+        <label>make fermented dough</label>
+        <description>Combine dough with yeast to ferment.</description>
+        <jobString>Making fermented dough.</jobString>
+        <workAmount>250</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <workSkill>Cooking</workSkill>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Flour</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Yeast</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <FermentedDough>1</FermentedDough>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="Make_MilitarisBread">
+        <defName>Make_MilitarisBread</defName>
+        <label>bake militaris bread</label>
+        <description>Bake dense bread from unfermented dough.</description>
+        <jobString>Baking militaris bread.</jobString>
+        <workAmount>400</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+<!--        <soundWorking>Recipe_CookMeal</soundWorking>-->
+        <workSkill>Cooking</workSkill>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>UnfermentedDough</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <MilitarisBread>1</MilitarisBread>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="Make_LeavenedBread">
+        <defName>Make_LeavenedBread</defName>
+        <label>bake leavened bread</label>
+        <description>Bake light bread from fermented dough.</description>
+        <jobString>Baking leavened bread.</jobString>
+        <workAmount>400</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <!--        <soundWorking>Recipe_CookMeal</soundWorking>-->
+        <workSkill>Cooking</workSkill>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FermentedDough</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <LeavenedBread>1</LeavenedBread>
+        </products>
+    </RecipeDef>
+
+
+    <!-- ================================================================= -->
+    <!--                            THOUGHTS                               -->
+    <!-- ================================================================= -->
+
+    <ThoughtDef>
+        <defName>AteMilitarisBread</defName>
+        <durationDays>1</durationDays>
+        <stages>
+            <li>
+                <label>ate militaris bread</label>
+                <description>That dense bread was disappointing.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+        <replaceThoughts>
+            <li>AteFineMeal</li>
+        </replaceThoughts>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AteLeavenedBread</defName>
+        <durationDays>1</durationDays>
+        <stages>
+            <li>
+                <label>ate leavened bread</label>
+                <description>I enjoyed that light, fluffy bread.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+        <replaceThoughts>
+            <li>AteFineMeal</li>
+        </replaceThoughts>
+    </ThoughtDef>
+
+</Defs>

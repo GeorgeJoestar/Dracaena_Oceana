@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <AlienRace.ThingDef_AlienRace ParentName="Human">
+        <defName>Dracaena</defName>
+        <label>Dracaena Oceana</label>
+        <description>Sample Description</description>
+
+        <race>
+            <intelligence>Humanlike</intelligence>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <body>Human</body>
+            <foodType>OmnivoreHuman</foodType>
+        </race>
+
+        <alienRace>
+            <graphicPaths>
+                <head>Things/Pawn/DracoRace/Head/</head>
+                <body>Things/Pawn/DracoRace/Body/DracoheadBody</body>
+                <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+            </graphicPaths>
+            <generalSettings>
+                <growthFactorByAge>
+                    <points>
+                        <li>(0,1)</li>
+                        <li>(6,1)</li>
+                        <li>(7,0.75)</li>
+                        <li>(13,0.75)</li>
+                    </points>
+                </growthFactorByAge>
+                <immuneToXenophobia>false</immuneToXenophobia>
+                <maleGenderProbability>0</maleGenderProbability>
+                <disallowedTraits>
+                    <li>
+                        <defName Degree="-1">Beauty</defName>
+                    </li>
+                    <li>
+                        <defName Degree="-2">Beauty</defName>
+                    </li>
+                    <li>
+                        <defName>AnnoyingVoice</defName>
+                    </li>
+                    <li>
+                        <defName>CreepyBreathing</defName>
+                    </li>
+                    <li>
+                        <defName Degree="2">DrugDesire</defName>
+                    </li>
+                    <li>
+                        <defName Degree="1">DrugDesire</defName>
+                    </li>
+                    <li>
+                        <defName Degree="-1">PsychicSensitivity</defName>
+                    </li>
+                </disallowedTraits>
+                <immuneToAge>true</immuneToAge>
+                <!-- <minAgeForAdulthood>80</minAgeForAdulthood> -->
+                <!-- <immuneToAge>true</immuneToAge> -->
+                <!-- <humanRecipeImport>true</humanRecipeImport> -->
+                <!-- <maxDamageForSocialfight>5</maxDamageForSocialfight> -->
+                <alienPartGenerator>
+                    <bodyTypes>
+                        <li>Female</li>
+                    </bodyTypes>
+                    <headTypes Inherit="False">
+                        <li>DracoHead1</li>
+                        <li>DracoHead2</li>
+                        <li>DracoHead3</li>
+                    </headTypes>
+                    <bodyAddons>
+                        <li>
+                            <path>Things/Pawn/DracoRace/Body/DracoheadTail</path>
+                            <offsets>
+                                <south>
+                                    <offset>(0, -0.2)</offset>
+                                </south>
+                                <north>
+                                    <offset>(0, -0.2)</offset>
+                                </north>
+                                <east>
+                                    <offset>(0, -0.2)</offset>
+                                </east>
+                            </offsets>
+                        </li>
+                        <li>
+                            <path>Things/Pawn/DracoRace/Head/DracoheadEars1</path>
+                            <offsets>
+                                <south>
+                                    <offset>(0, 0.15)</offset>
+                                </south>
+                                <north>
+                                    <offset>(0, 0.15)</offset>
+                                </north>
+                                <east>
+                                    <offset>(0, 0.15)</offset>
+                                </east>
+                            </offsets>
+                        </li>
+                        <li>
+                            <path>Things/Pawn/DracoRace/Head/DracoheadCorner1</path>
+                            <offsets>
+                                <south>
+                                    <offset>(0, 0.12)</offset>
+                                </south>
+                                <north>
+                                    <offset>(0, 0.12)</offset>
+                                </north>
+                                <east>
+                                    <offset>(0, 0.12)</offset>
+                                </east>
+                            </offsets>
+                        </li>
+                        <li>
+                            <name>DracoheadHair1</name>
+                            <userCustomizable>true</userCustomizable>
+                            <path>Things/Pawn/DracoRace/Hair/Hair1/DracoheadHair1</path>
+                            <inFrontOfBody>true</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
+                            <colorChannel>hair</colorChannel>
+                            <defaultOffset>Center</defaultOffset>
+                            <drawSize>1</drawSize>
+                            <alignWithHead>true</alignWithHead>
+                            <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                            <conditions>
+                                <BodyPart>
+                                    <bodyPart>Head</bodyPart>
+                                </BodyPart>
+                                <Apparel>
+                                    <hiddenUnderApparelTag>
+                                    </hiddenUnderApparelTag>
+                                </Apparel>
+                                <Posture>
+                                    <drawnStanding>true</drawnStanding>
+                                    <drawnInBed>true</drawnInBed>
+                                    <drawnLaying>true</drawnLaying>
+                                </Posture>
+                                <RotStage>Fresh,Rotting</RotStage>
+                            </conditions>
+                            <offsets>
+                                <west>
+                                    <layerOffset>-0.274</layerOffset>
+                                </west>
+                                <south>
+                                    <layerOffset>-0.274</layerOffset>
+                                </south>
+                                <north>
+                                    <layerOffset>-0.274</layerOffset>
+                                </north>
+                                <east>
+                                    <layerOffset>-0.274</layerOffset>
+                                </east>
+                            </offsets>
+                        </li>
+                    </bodyAddons>
+
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>100</weight>
+                                        <only>RGBA(255,255,255)</only>
+                                    </li>
+                                </options>
+                            </first>
+                            <second Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>RGBA(255,255,255)</only>
+                                    </li>
+                                </options>
+                            </second>
+                        </li>
+                        <li>
+                            <name>hair</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>4</weight>
+                                        <only>RGB(255,255,255)</only>
+                                    </li>
+                                </options>
+                            </first>
+                            <second Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>RGB(255,255,255)</only>
+                                    </li>
+                                </options>
+                            </second>
+                        </li>
+                    </colorChannels>
+                    <borderScale>1</borderScale>
+                    <headOffsetDirectional>
+                        <north>
+                            <offset>(0.0, 0.25)</offset>
+                            <portraitBodyTypes>
+                                <Female>(0.0, 5)</Female>
+                            </portraitBodyTypes>
+                            <portraitHeadTypes>
+                                <Female_AverageNormal>(0.0, 0.2)</Female_AverageNormal>
+                            </portraitHeadTypes>
+                        </north>
+                        <south>
+                            <portraitBodyTypes>
+                                <Female>(0.0, 5)</Female>
+                            </portraitBodyTypes>
+                            <portraitHeadTypes>
+                                <Female_AverageNormal>(0.0, 0.2)</Female_AverageNormal>
+                            </portraitHeadTypes>
+                            <offset>(0.0, 0.15)</offset>
+                        </south>
+                        <east>
+                            <offset>(-0.07, 0.22)</offset>
+                        </east>
+                        <west>
+                            <offset>(0.07, 0.22)</offset>
+                        </west>
+                    </headOffsetDirectional>
+                    <customDrawSize>(1.5, 1.5)</customDrawSize>
+                    <customHeadDrawSize>(1.5, 1.5)</customHeadDrawSize>
+                    <customPortraitDrawSize>(1.9, 1.9)</customPortraitDrawSize>
+                    <customPortraitHeadDrawSize>(1.6, 1.6)</customPortraitHeadDrawSize>
+<!--                    <getsGreyAt>50</getsGreyAt>-->
+                </alienPartGenerator>
+            </generalSettings>
+
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>true</hasStyle>
+                        <styleTagsOverride>
+                            <li>Draco_Style</li>
+                        </styleTagsOverride>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+            </styleSettings>
+
+            <raceRestriction>
+                <weaponList>
+                    
+                </weaponList>
+                <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+                <apparelList>
+                    
+                </apparelList>
+                <whiteApparelList>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_AirwireHeadset</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArrayHeadset</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_IntegratorHeadset</li>
+
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_ShardPsychicShockLance</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_ShardPsychicInsanityLance</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_BiomutationLance</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DisruptorFlarePack</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_PackTurret</li>
+                </whiteApparelList>
+                <buildingList>
+
+                </buildingList>
+                <researchList>
+
+                </researchList>
+                <traitList>
+
+                </traitList>
+                <foodList>
+
+                </foodList>
+                <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
+                <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+
+                <xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+                    <!-- <li MayRequire="Ludeon.RimWorld.Biotech">KiiroXenotype</li> -->
+                </xenotypeList>
+
+                <whiteXenotypeList>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+                </whiteXenotypeList>
+
+                <blackEndoCategories>
+                    <li>Melanin</li>
+                    <li>HairColor</li>
+                    <li>BodyType</li>
+                    <li>Ears</li>
+                    <li>Nose</li>
+                    <li>Voice</li>
+                    <li>Headbone</li>
+                    <li>Head</li>
+                    <li>Jaw</li>
+                </blackEndoCategories>
+
+                <blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+                </blackGeneList>
+
+                <blackGeneTags>
+                    <li>EyeColor</li>
+                    <li>HairStyle</li>
+                    <li>BeardStyle</li>
+                    <li>SkinColorOverride</li>
+                    <li>Tail</li>
+                    <li>BodyType</li>
+                    <li>Ears</li>
+                </blackGeneTags>
+
+                <blackXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+                </blackXenotypeList>
+            </raceRestriction>
+        </alienRace>
+    </AlienRace.ThingDef_AlienRace>
+
+    <StyleItemCategoryDef>
+        <defName>Draco_Style</defName>
+        <label>Draco Hairstyle</label>
+    </StyleItemCategoryDef>
+
+
+    <HairDef>
+        <defName>Draco_Null</defName>
+        <label>Draco Hairstyle</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/DracoRace/Hair/Null/Null</texPath>
+        <category>Draco_Style</category>
+        <styleTags>
+            <li>Draco_Style</li>
+        </styleTags>
+    </HairDef>
+
+</Defs>

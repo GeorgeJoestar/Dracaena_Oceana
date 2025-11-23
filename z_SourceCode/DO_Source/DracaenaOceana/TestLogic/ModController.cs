@@ -3,6 +3,9 @@ using UnityEngine;
 using Verse;
 using RimWorldProj.WelcomeScreen;  
 using HarmonyLib;
+using RimWorldProj.TestLogic.UI;
+
+// using RimWorldProj.TestLogic.UI;
 
 namespace RimWorldProj.TestLogic
 {
@@ -22,11 +25,12 @@ namespace RimWorldProj.TestLogic
             {
                 float buttonWidth = 150f;
                 float buttonHeight = 35f;
-                Rect buttonRect = new Rect(UI.screenWidth - buttonWidth - 10f, UI.screenHeight - buttonHeight - 10f, buttonWidth, buttonHeight);
+                Rect buttonRect = new Rect(Verse.UI.screenWidth - buttonWidth - 10f, Verse.UI.screenHeight - buttonHeight - 10f, buttonWidth, buttonHeight);
                 
                 if (Widgets.ButtonText(buttonRect, "Reopen Window"))
                 {
-                    Find.WindowStack.Add(new WelcomeWindow());
+                    UiPreviewWindow.TryOpenFromJsonAsset();
+                    // Find.WindowStack.Add(new WelcomeWindow());
                 }
             }
         }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeWeapon" Name="JINK_BaseMeleeWeapon" Abstract="True" />
+    <ThingDef>
+        <thingClass>ThingWithComps</thingClass>
+        <defName>MeleeWeapon_LongSword_JINK</defName>
+        <label>Longsword reforged</label>
+        <description>Longsword</description>
+    </ThingDef>
+
+</Defs>

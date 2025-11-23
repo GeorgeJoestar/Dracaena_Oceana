@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--建筑分页-->
+	<DesignationCategoryDef>
+		<defName>Dracaena_Oceana_Category</defName>
+		<label>Dracaena Oceana</label>
+		<order>100</order>
+	</DesignationCategoryDef>
+</Defs>
