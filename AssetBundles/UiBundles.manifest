@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 855287672
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: rwui_json_welcomewnd
+      Dependencies: {}

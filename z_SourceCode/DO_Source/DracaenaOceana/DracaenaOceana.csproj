@@ -10,7 +10,7 @@
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>RimWorldProj</RootNamespace>
         <AssemblyName>DracaenaOceana</AssemblyName>
-        <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>12</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -49,6 +49,9 @@
         </Reference>
         <Reference Include="Assembly-CSharp">
           <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json">
+          <HintPath>References\Newtonsoft.Json.dll</HintPath>
         </Reference>
         <Reference Include="PrepatcherImpl">
           <HintPath>References\PrepatcherImpl.dll</HintPath>
@@ -272,13 +275,20 @@
     <Compile Include="TestLogic\CustomWindow.cs" />
     <Compile Include="TestLogic\DefaultWindow.cs" />
     <Compile Include="TestLogic\HelpUtils.cs" />
+    <Compile Include="TestLogic\IMGUITest\UiPreviewWindow.cs" />
         <Compile Include="TestLogic\ModController.cs" />
         <Compile Include="TestLogic\TestWindow.cs" />
+        <Compile Include="TestLogic\Utils\FontLoader.cs" />
+        <Compile Include="TestLogic\Utils\UiLayout.cs" />
+        <Compile Include="TestLogic\Utils\UiLayoutController.cs" />
+        <Compile Include="TestLogic\Utils\UiLayoutJson.cs" />
+        <Compile Include="TestLogic\Utils\UiLayoutJsonLoader.cs" />
+        <Compile Include="TestLogic\Utils\UiRuntimeRenderer.cs" />
         <Compile Include="TestLogic\WelcomeWindow.cs" />
         <Compile Include="TestLogic\Workbench.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="xcopy /Y &quot;$(TargetDir)DracaenaOceana.dll&quot; &quot;$(ProjectDir)..\..\..\1.5\Assemblies\&quot;" />
+        <Exec Command="xcopy /Y &quot;$(TargetDir)DracaenaOceana.dll&quot; &quot;$(ProjectDir)..\..\..\1.6\Assemblies\&quot;" />
 	</Target>
 </Project>

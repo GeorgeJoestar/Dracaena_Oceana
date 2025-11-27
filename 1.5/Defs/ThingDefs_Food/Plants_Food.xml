@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-
-    <!-- 1) New top-level category under Root for all mod items -->
     <ThingCategoryDef>
         <defName>WheatMod_Category</defName>
         <label>Wheat Mod Items</label>
         <parent>Root</parent>
     </ThingCategoryDef>
 
-    <!-- 2) Abstract base for all wheat products -->
     <ThingDef Abstract="True" Name="WheatProductBase" ParentName="OrganicProductBase">
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -22,7 +19,6 @@
         </statBases>
         <tickerType>Rare</tickerType>
         <healthAffectsPrice>false</healthAffectsPrice>
-        <!-- ingestible so it can be used in custom recipes or eaten raw -->
         <ingestible>
             <preferability>RawBad</preferability>
             <tasteThought>AteRawFood</tasteThought>
@@ -30,19 +26,15 @@
             <ingestSound>RawVegetable_Eat</ingestSound>
         </ingestible>
         <socialPropernessMatters>true</socialPropernessMatters>
-        <!-- assign to our new WheatMod category -->
         <thingCategories>
             <li>WheatMod_Category</li>
         </thingCategories>
     </ThingDef>
 
-    <!-- 3) Raw wheat ear produce -->
     <ThingDef ParentName="WheatProductBase">
         <defName>WheatEar</defName>
         <label>wheat ear</label>
         <description>Raw wheat ear, harvested from mature wheat plants.</description>
-        <!-- <soundInteract>Grain_Drop</soundInteract> -->
-        <!-- <soundDrop>Grain_Drop</soundDrop> -->
         <possessionCount>10</possessionCount>
         <graphicData>
             <texPath>Things/Item/Resource/PlantFoodRaw/WheatEar</texPath>
@@ -64,7 +56,6 @@
         </comps>
     </ThingDef>
 
-    <!-- 4) Wheat plant, modeled on vanilla corn but 12 days / yield 30 -->
     <ThingDef ParentName="PlantBase">
         <defName>Plant_Wheat</defName>
         <label>wheat plant</label>

@@ -1,0 +1,17 @@
+<Defs>
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>DracoHead1</defName>
+        <graphicPath>Things/Pawn/DracoRace/Head/DracoHead1</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>DracoHead2</defName>
+        <graphicPath>Things/Pawn/DracoRace/Head/DracoHead2</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>DracoHead3</defName>
+        <graphicPath>Things/Pawn/DracoRace/Head/DracoHead3</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+</Defs>

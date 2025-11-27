@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 3310125243
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 87a5480bb407a0d733f6f3d2b6262472
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7ec7785b079247af6a922cdaa7952c95
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 87a5480bb407a0d733f6f3d2b6262472
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5e8863f54d012e140b0dda87f83702dd, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: RwUi.Shared.UiLayout/Element
+Assets:
+- Assets/WndWelcome/DecorPaper2.png
+- Assets/WndWelcome/NavTabClose.png
+- Assets/WndWelcome/DecorTitle1.png
+- Assets/WndWelcome/char_click.png
+- Assets/WndWelcome/NavTab.png
+- Assets/WndWelcome/DecorSubTitle1.png
+- Assets/WndWelcome/DecorNav.png
+- Assets/WndWelcome/char.png
+- Assets/WndWelcome/DecorPaper1.png
+- Assets/WndWelcome/SplitLine.png
+- Assets/WndWelcome/DecorTitle2.png
+- Assets/Font/Huiwen-mincho.otf
+- Assets/WndWelcome/NavContent.png
+- Assets/WndWelcome/char_idle.png
+- Assets/WelcomeWnd.asset
+- Assets/WndWelcome/DecorImg2.png
+- Assets/UiBundles/Generated/WelcomeWnd.json
+- Assets/WndWelcome/DecorImg1.png
+- Assets/WndWelcome/TitleBG.png
+- Assets/WndWelcome/Silver_c.png
+- Assets/WndWelcome/DecorSubTitle2.png
+Dependencies: []
