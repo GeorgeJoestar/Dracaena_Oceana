@@ -300,7 +300,9 @@
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Things/Building/Production/FueledOven</texPath>
-            <drawSize>(1,2)</drawSize>
+            <drawSize>(1.65,1.65)</drawSize>
+            <drawOffset>(0,0,0.3)</drawOffset>
+            <!-- <drawOffsetSouth>(0,0,0.3)</drawOffsetSouth> -->
         </graphicData>
         <size>(1,1)</size>
         <statBases>

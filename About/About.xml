@@ -42,6 +42,11 @@
 <!--			<steamWorkshopUrl>https://github.com/bbradson/Fishery</steamWorkshopUrl>-->
 <!--			<downloadUrl>https://github.com/bbradson/Fishery</downloadUrl>-->
 <!--		</li>-->
+		<li>
+			<packageId>erdelf.humanoidalienraces</packageId>
+			<displayName>Humanoid Alien Races</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<!-- List of imcompatible mods from Fishery -->
 	<incompatibleWith>
