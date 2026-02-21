@@ -86,23 +86,24 @@
                         <li>
                             <path>Things/Pawn/DracoRace/Head/DracoheadEars1</path>
                             <alignWithHead>true</alignWithHead> <!-- RimWorld 1.5+ 必需，确保与头部正确对齐，修复躺下时隐藏的问题 -->
-                            <drawSize>1.5</drawSize> <!-- 调整耳朵大小，可根据实际效果微调 -->
+                            <drawSize>1.45</drawSize> <!-- 调整耳朵大小，可根据实际效果微调 -->
+                            <inFrontOfBody>true</inFrontOfBody> 
                             <offsets>
                                 <south>
                                     <offset>(0, 0)</offset>
-                                    <layerOffset>-0.28</layerOffset> <!-- 调整渲染层级：负值越小越靠前，使其在发型前面 -->
+                                    <layerOffset>-0.15</layerOffset> <!-- 调整渲染层级：负值越小越靠前，使其在发型前面 -->
                                 </south>
                                 <north>
                                     <offset>(0, 0)</offset>
-                                    <layerOffset>-0.28</layerOffset> <!-- 调整渲染层级 -->
+                                    <layerOffset>-0.15</layerOffset> <!-- 调整渲染层级 -->
                                 </north>
                                 <east>
-                                    <offset>(0, 0)</offset>
-                                    <layerOffset>-0.28</layerOffset> <!-- 调整渲染层级 -->
+                                    <offset>(0, 0.05)</offset>
+                                    <layerOffset>-0.15</layerOffset> <!-- 调整渲染层级 -->
                                 </east>
                                 <west> <!-- 明确添加west方向的偏移量，通常与east镜像，确保层级一致 -->
-                                    <offset>(0, 0)</offset>
-                                    <layerOffset>-0.28</layerOffset>
+                                    <offset>(0, 0.05)</offset>
+                                    <layerOffset>-0.15</layerOffset>
                                 </west>
                             </offsets>
                         </li>
@@ -129,7 +130,7 @@
                                 </west>
                             </offsets>
                         </li>
-                        <li>  
+                        <!-- <li>  
                             <name>DracoheadHair</name>
                             <userCustomizable>true</userCustomizable>
                             <path>Things/Pawn/DracoRace/Hair/DracoheadHair</path>
@@ -168,6 +169,71 @@
                                 <east>
                                     <layerOffset>-0.274</layerOffset>
                                 </east>
+                            </offsets>
+                        </li> -->
+                        <!-- ==================== 前发部分 (主发型选择器) ==================== -->
+                        <li>
+                            <name>DracoheadHair_Front</name> <!-- 前发部分的唯一名称 -->
+                            <userCustomizable>true</userCustomizable>
+                            <!-- 路径指向前发贴图的基础名称，游戏将根据此路径和现有文件加载变体（例如：DracoheadHair_Front.png, DracoheadHair_Front1.png, 等） -->
+                            <path>Things/Pawn/DracoRace/Hair/DracoheadHair_Front</path>
+                            <!--<inFrontOfBody>true</inFrontOfBody> --> <!-- 取反偏移值？？？？ -->
+                            <colorChannel>hair</colorChannel>
+                            <alignWithHead>true</alignWithHead>
+                            <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                            <conditions>
+                                <BodyPart>
+                                    <bodyPart>Head</bodyPart>
+                                </BodyPart>
+                                <Apparel>
+                                    <hiddenUnderApparelTag>
+                                    </hiddenUnderApparelTag>
+                                </Apparel>
+                                <Posture>
+                                    <drawnStanding>true</drawnStanding>
+                                    <drawnInBed>true</drawnInBed>
+                                    <drawnLaying>true</drawnLaying>
+                                </Posture>
+                                <RotStage>Fresh,Rotting</RotStage>
+                            </conditions>
+                            <offsets>
+                                <north><offset>(0, 0)</offset><layerOffset>-0.5</layerOffset></north>
+                                <south><offset>(0, 0)</offset><layerOffset>-0.5</layerOffset></south>
+                                <east><offset>(0, 0)</offset><layerOffset>-0.5</layerOffset></east>
+                                <west><offset>(0, 0)</offset><layerOffset>-0.5</layerOffset></west>
+                            </offsets>
+                        </li>
+
+                        <!-- ==================== 后发部分 (与前发链接变体) ==================== -->
+                        <li>
+                            <name>DracoheadHair_Back</name> <!-- 后发部分的唯一名称 -->
+                            <userCustomizable>true</userCustomizable>
+                            <path>Things/Pawn/DracoRace/Hair/DracoheadHair_Back</path> <!-- 指向重命名后的后发基础路径 -->
+                            <!-- <inFrontOfBody>true</inFrontOfBody>  -->
+                            <colorChannel>hair</colorChannel>
+                            <alignWithHead>true</alignWithHead>
+                            <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                            <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious> <!-- **关键！** 确保后发与前发选择相同的变体 -->
+                            <conditions>
+                                <BodyPart>
+                                    <bodyPart>Head</bodyPart>
+                                </BodyPart>
+                                <Apparel>
+                                    <hiddenUnderApparelTag>
+                                    </hiddenUnderApparelTag>
+                                </Apparel>
+                                <Posture>
+                                    <drawnStanding>true</drawnStanding>
+                                    <drawnInBed>true</drawnInBed>
+                                    <drawnLaying>true</drawnLaying>
+                                </Posture>
+                                <RotStage>Fresh,Rotting</RotStage>
+                            </conditions>
+                            <offsets>
+                                <north><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></north>
+                                <south><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></south>
+                                <east><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></east>
+                                <west><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></west>
                             </offsets>
                         </li>
                     </bodyAddons>
