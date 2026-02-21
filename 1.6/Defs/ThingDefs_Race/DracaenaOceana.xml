@@ -70,50 +70,69 @@
                     <bodyAddons>
                         <li>
                             <path>Things/Pawn/DracoRace/Body/DracoheadTail</path>
+                            <drawSize>1.5</drawSize>
                             <offsets>
                                 <south>
-                                    <offset>(0, -0.2)</offset>
+                                    <offset>(-0.2, -0.1)</offset>
                                 </south>
                                 <north>
-                                    <offset>(0, -0.2)</offset>
+                                    <offset>(0.05, -0.1)</offset>
                                 </north>
                                 <east>
-                                    <offset>(0, -0.2)</offset>
+                                    <offset>(0.03, 0.1)</offset>
                                 </east>
                             </offsets>
                         </li>
                         <li>
                             <path>Things/Pawn/DracoRace/Head/DracoheadEars1</path>
+                            <alignWithHead>true</alignWithHead> <!-- RimWorld 1.5+ 必需，确保与头部正确对齐，修复躺下时隐藏的问题 -->
+                            <drawSize>1.5</drawSize> <!-- 调整耳朵大小，可根据实际效果微调 -->
                             <offsets>
                                 <south>
-                                    <offset>(0, 0.15)</offset>
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-0.28</layerOffset> <!-- 调整渲染层级：负值越小越靠前，使其在发型前面 -->
                                 </south>
                                 <north>
-                                    <offset>(0, 0.15)</offset>
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-0.28</layerOffset> <!-- 调整渲染层级 -->
                                 </north>
                                 <east>
-                                    <offset>(0, 0.15)</offset>
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-0.28</layerOffset> <!-- 调整渲染层级 -->
                                 </east>
+                                <west> <!-- 明确添加west方向的偏移量，通常与east镜像，确保层级一致 -->
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-0.28</layerOffset>
+                                </west>
                             </offsets>
                         </li>
                         <li>
                             <path>Things/Pawn/DracoRace/Head/DracoheadCorner1</path>
+                            <alignWithHead>true</alignWithHead> <!-- RimWorld 1.5+ 必需，确保与头部正确对齐，修复躺下时隐藏的问题 -->
+                            <drawSize>1.5</drawSize> <!-- 调整角的大小，可根据实际效果微调 -->
                             <offsets>
                                 <south>
-                                    <offset>(0, 0.12)</offset>
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-1.1</layerOffset> <!-- 调整渲染层级：负值越小越靠前，使其在耳朵前面 -->
                                 </south>
                                 <north>
-                                    <offset>(0, 0.12)</offset>
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-1.1</layerOffset> <!-- 调整渲染层级 -->
                                 </north>
                                 <east>
-                                    <offset>(0, 0.12)</offset>
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-1.1</layerOffset> <!-- 调整渲染层级 -->
                                 </east>
+                                <west> <!-- 明确添加west方向的偏移量，通常与east镜像，确保层级一致 -->
+                                    <offset>(0, 0)</offset>
+                                    <layerOffset>-1.1</layerOffset>
+                                </west>
                             </offsets>
                         </li>
-                        <li>
-                            <name>DracoheadHair1</name>
+                        <li>  
+                            <name>DracoheadHair</name>
                             <userCustomizable>true</userCustomizable>
-                            <path>Things/Pawn/DracoRace/Hair/Hair1/DracoheadHair1</path>
+                            <path>Things/Pawn/DracoRace/Hair/DracoheadHair</path>
                             <inFrontOfBody>true</inFrontOfBody>
                             <layerInvert>false</layerInvert>
                             <colorChannel>hair</colorChannel>
@@ -339,7 +358,7 @@
             </raceRestriction>
         </alienRace>
     </AlienRace.ThingDef_AlienRace>
-
+    <!-- 用于给原版发型空占位，因为发型是作为身体部件在bodyAddons里的 -->
     <StyleItemCategoryDef>
         <defName>Draco_Style</defName>
         <label>Draco Hairstyle</label>
