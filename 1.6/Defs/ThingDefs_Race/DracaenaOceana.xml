@@ -230,7 +230,7 @@
                                 <RotStage>Fresh,Rotting</RotStage>
                             </conditions>
                             <offsets>
-                                <north><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></north>
+                                <north><offset>(0, 0)</offset><layerOffset>0.4</layerOffset></north>
                                 <south><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></south>
                                 <east><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></east>
                                 <west><offset>(0, 0)</offset><layerOffset>-0.4</layerOffset></west>
