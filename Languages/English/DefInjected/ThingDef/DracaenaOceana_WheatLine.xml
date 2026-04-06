@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Plant_Wheat.label>wheat plant</Plant_Wheat.label>
+  <Plant_Wheat.description>A staple grain crop cultivated by Dracaena settlers. It needs fertile soil and time, but supports a full milling and baking chain.</Plant_Wheat.description>
+  <WheatEar.label>wheat ear</WheatEar.label>
+  <WheatEar.description>Harvested wheat ears. Basic grain material for porridge and flour.</WheatEar.description>
+  <Flour.label>wheat flour</Flour.label>
+  <Flour.description>Ground wheat flour. Better digestibility than raw grain and the core input for dough and yeast.</Flour.description>
+  <Yeast.label>yeast culture</Yeast.label>
+  <Yeast.description>Active yeast cultivated from flour. Used to ferment dough for softer bread.</Yeast.description>
+  <UnfermentedDough.label>unfermented dough</UnfermentedDough.label>
+  <UnfermentedDough.description>Simple dough mixed from flour. It can be baked into hard travel bread.</UnfermentedDough.description>
+  <FermentedDough.label>fermented dough</FermentedDough.label>
+  <FermentedDough.description>Dough proofed with yeast. Requires more preparation, but yields much better bread.</FermentedDough.description>
+  <Puls.label>wheat porridge</Puls.label>
+  <Puls.description>A thin porridge boiled from cracked wheat. Cheap and filling, but not pleasant.</Puls.description>
+  <MilitarisBread.label>military bread</MilitarisBread.label>
+  <MilitarisBread.description>Dense, dry field bread made from unfermented dough. Long-lasting and practical.</MilitarisBread.description>
+  <LeavenedBread.label>white bread</LeavenedBread.label>
+  <LeavenedBread.description>Soft white bread baked from fermented dough. Time-intensive to produce, but exceptionally nourishing and satisfying.</LeavenedBread.description>
+  <Drac_bench_smithy.label>draconic smithy</Drac_bench_smithy.label>
+  <Drac_bench_smithy.description>A rugged smithy used by Dracaena colonists for heavy metalwork.</Drac_bench_smithy.description>
+  <Drac_bench_stove.label>draconic cookstove</Drac_bench_stove.label>
+  <Drac_bench_stove.description>A broad cookstove used for kneading and baking grain-based food.</Drac_bench_stove.description>
+  <Drac_bench_tailor.label>draconic tailoring bench</Drac_bench_tailor.label>
+  <Drac_bench_tailor.description>A tailoring bench adapted for Dracaena apparel and handcraft work.</Drac_bench_tailor.description>
+  <Drac_bench_herb.label>draconic agronomy bench</Drac_bench_herb.label>
+  <Drac_bench_herb.description>A processing bench for herbal materials and grain preparation.</Drac_bench_herb.description>
+  <FermentationBucket.label>fermentation bucket</FermentationBucket.label>
+  <FermentationBucket.description>A sealed bucket setup used to culture wheat yeast from flour.</FermentationBucket.description>
+  <Oven.label>bread oven</Oven.label>
+  <Oven.description>A dedicated oven that keeps steady heat for high-quality leavened bread.</Oven.description>
+</LanguageData>

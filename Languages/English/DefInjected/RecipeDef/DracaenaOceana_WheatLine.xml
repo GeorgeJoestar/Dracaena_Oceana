@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Make_Flour.label>mill wheat into flour</Make_Flour.label>
+  <Make_Flour.description>Process wheat ears into flour at the agronomy bench.</Make_Flour.description>
+  <Make_Flour.jobString>Milling flour.</Make_Flour.jobString>
+  <Make_Flour_Bulk.label>mill wheat into flour (bulk)</Make_Flour_Bulk.label>
+  <Make_Flour_Bulk.description>Large-batch milling for stockpiling flour.</Make_Flour_Bulk.description>
+  <Make_Flour_Bulk.jobString>Milling flour in bulk.</Make_Flour_Bulk.jobString>
+  <Make_Yeast.label>culture yeast</Make_Yeast.label>
+  <Make_Yeast.description>Ferment flour into active yeast.</Make_Yeast.description>
+  <Make_Yeast.jobString>Culturing yeast.</Make_Yeast.jobString>
+  <Make_Yeast_Bulk.label>culture yeast (bulk)</Make_Yeast_Bulk.label>
+  <Make_Yeast_Bulk.description>Prepare a larger batch of yeast for sustained baking.</Make_Yeast_Bulk.description>
+  <Make_Yeast_Bulk.jobString>Culturing yeast in bulk.</Make_Yeast_Bulk.jobString>
+  <Make_UnfermentedDough.label>mix unfermented dough</Make_UnfermentedDough.label>
+  <Make_UnfermentedDough.description>Mix flour into basic dough for hard bread.</Make_UnfermentedDough.description>
+  <Make_UnfermentedDough.jobString>Mixing unfermented dough.</Make_UnfermentedDough.jobString>
+  <Make_FermentedDough.label>mix fermented dough</Make_FermentedDough.label>
+  <Make_FermentedDough.description>Add yeast while mixing dough to prepare high-quality bread dough.</Make_FermentedDough.description>
+  <Make_FermentedDough.jobString>Mixing fermented dough.</Make_FermentedDough.jobString>
+  <Make_Puls.label>cook wheat porridge</Make_Puls.label>
+  <Make_Puls.description>Boil wheat into a basic porridge. It is cheap but lowers mood.</Make_Puls.description>
+  <Make_Puls.jobString>Cooking wheat porridge.</Make_Puls.jobString>
+  <Make_MilitarisBread.label>bake military bread</Make_MilitarisBread.label>
+  <Make_MilitarisBread.description>Bake durable field bread from unfermented dough.</Make_MilitarisBread.description>
+  <Make_MilitarisBread.jobString>Baking military bread.</Make_MilitarisBread.jobString>
+  <Make_LeavenedBread.label>bake white bread</Make_LeavenedBread.label>
+  <Make_LeavenedBread.description>Bake soft white bread from fermented dough in a bread oven.</Make_LeavenedBread.description>
+  <Make_LeavenedBread.jobString>Baking white bread.</Make_LeavenedBread.jobString>
+</LanguageData>

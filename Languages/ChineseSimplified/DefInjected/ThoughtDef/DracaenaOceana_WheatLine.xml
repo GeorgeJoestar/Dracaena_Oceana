@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ate wheat porridge -->
+  <AtePuls.stages.ate_wheat_porridge.label>吃了麦粥</AtePuls.stages.ate_wheat_porridge.label>
+  <!-- EN: It fills the stomach, but the texture is rough and the taste is bland. -->
+  <AtePuls.stages.ate_wheat_porridge.description>能填饱肚子，但口感粗糙，味道寡淡。</AtePuls.stages.ate_wheat_porridge.description>
+  
+  <!-- EN: ate military bread -->
+  <AteMilitarisBread.stages.ate_military_bread.label>吃了行军面包</AteMilitarisBread.stages.ate_military_bread.label>
+  <!-- EN: This bread is dry and hard. Useful for travel, unpleasant for daily meals. -->
+  <AteMilitarisBread.stages.ate_military_bread.description>又干又硬，虽然便于保存，但日常吃起来很折磨。</AteMilitarisBread.stages.ate_military_bread.description>
+  
+  <!-- EN: ate white bread -->
+  <AteLeavenedBread.stages.ate_white_bread.label>吃了白面包</AteLeavenedBread.stages.ate_white_bread.label>
+  <!-- EN: So soft and fragrant. It feels like my teeth are in heaven. -->
+  <AteLeavenedBread.stages.ate_white_bread.description>如此柔软香甜，仿佛牙齿都在天堂。</AteLeavenedBread.stages.ate_white_bread.description>
+  
+</LanguageData>

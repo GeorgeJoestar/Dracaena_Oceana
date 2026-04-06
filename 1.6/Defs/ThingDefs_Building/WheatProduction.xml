@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="BenchBase">
         <defName>FermentationBucket</defName>
-        <label>DO_FermentationBucket_Label</label>
-        <description>DO_FermentationBucket_Desc</description>
+        <label>fermentation bucket</label>
+        <description>A sealed bucket setup used to culture wheat yeast from flour.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -49,8 +49,8 @@
 
     <ThingDef ParentName="BenchBase">
         <defName>Oven</defName>
-        <label>DO_Oven_Label</label>
-        <description>DO_Oven_Desc</description>
+        <label>bread oven</label>
+        <description>A dedicated oven that keeps steady heat for high-quality leavened bread.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -95,3 +95,4 @@
         </placeWorkers>
     </ThingDef>
 </Defs>
+

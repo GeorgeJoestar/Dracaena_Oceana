@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <RecipeDef Abstract="True" Name="DO_WheatRecipeBase">
         <workSpeedStat>CookSpeed</workSpeedStat>
@@ -9,9 +9,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_Flour</defName>
-        <label>DO_Recipe_MakeFlour_Label</label>
-        <description>DO_Recipe_MakeFlour_Desc</description>
-        <jobString>DO_Recipe_MakeFlour_Job</jobString>
+        <label>mill wheat into flour</label>
+        <description>Process wheat ears into flour at the agronomy bench.</description>
+        <jobString>Milling flour.</jobString>
         <workAmount>380</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
@@ -40,9 +40,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_Flour_Bulk</defName>
-        <label>DO_Recipe_MakeFlourBulk_Label</label>
-        <description>DO_Recipe_MakeFlourBulk_Desc</description>
-        <jobString>DO_Recipe_MakeFlourBulk_Job</jobString>
+        <label>mill wheat into flour (bulk)</label>
+        <description>Large-batch milling for stockpiling flour.</description>
+        <jobString>Milling flour in bulk.</jobString>
         <workAmount>1750</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
@@ -71,9 +71,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_Yeast</defName>
-        <label>DO_Recipe_MakeYeast_Label</label>
-        <description>DO_Recipe_MakeYeast_Desc</description>
-        <jobString>DO_Recipe_MakeYeast_Job</jobString>
+        <label>culture yeast</label>
+        <description>Ferment flour into active yeast.</description>
+        <jobString>Culturing yeast.</jobString>
         <workAmount>520</workAmount>
         <skillRequirements>
             <Cooking>3</Cooking>
@@ -99,9 +99,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_Yeast_Bulk</defName>
-        <label>DO_Recipe_MakeYeastBulk_Label</label>
-        <description>DO_Recipe_MakeYeastBulk_Desc</description>
-        <jobString>DO_Recipe_MakeYeastBulk_Job</jobString>
+        <label>culture yeast (bulk)</label>
+        <description>Prepare a larger batch of yeast for sustained baking.</description>
+        <jobString>Culturing yeast in bulk.</jobString>
         <workAmount>1300</workAmount>
         <skillRequirements>
             <Cooking>3</Cooking>
@@ -127,9 +127,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_UnfermentedDough</defName>
-        <label>DO_Recipe_MakeUnfermentedDough_Label</label>
-        <description>DO_Recipe_MakeUnfermentedDough_Desc</description>
-        <jobString>DO_Recipe_MakeUnfermentedDough_Job</jobString>
+        <label>mix unfermented dough</label>
+        <description>Mix flour into basic dough for hard bread.</description>
+        <jobString>Mixing unfermented dough.</jobString>
         <workAmount>260</workAmount>
         <skillRequirements>
             <Cooking>2</Cooking>
@@ -157,9 +157,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_FermentedDough</defName>
-        <label>DO_Recipe_MakeFermentedDough_Label</label>
-        <description>DO_Recipe_MakeFermentedDough_Desc</description>
-        <jobString>DO_Recipe_MakeFermentedDough_Job</jobString>
+        <label>mix fermented dough</label>
+        <description>Add yeast while mixing dough to prepare high-quality bread dough.</description>
+        <jobString>Mixing fermented dough.</jobString>
         <workAmount>340</workAmount>
         <skillRequirements>
             <Cooking>4</Cooking>
@@ -195,9 +195,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_Puls</defName>
-        <label>DO_Recipe_CookPuls_Label</label>
-        <description>DO_Recipe_CookPuls_Desc</description>
-        <jobString>DO_Recipe_CookPuls_Job</jobString>
+        <label>cook wheat porridge</label>
+        <description>Boil wheat into a basic porridge. It is cheap but lowers mood.</description>
+        <jobString>Cooking wheat porridge.</jobString>
         <workAmount>220</workAmount>
         <skillRequirements>
             <Cooking>1</Cooking>
@@ -226,9 +226,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_MilitarisBread</defName>
-        <label>DO_Recipe_BakeMilitarisBread_Label</label>
-        <description>DO_Recipe_BakeMilitarisBread_Desc</description>
-        <jobString>DO_Recipe_BakeMilitarisBread_Job</jobString>
+        <label>bake military bread</label>
+        <description>Bake durable field bread from unfermented dough.</description>
+        <jobString>Baking military bread.</jobString>
         <workAmount>360</workAmount>
         <skillRequirements>
             <Cooking>3</Cooking>
@@ -257,9 +257,9 @@
 
     <RecipeDef ParentName="DO_WheatRecipeBase">
         <defName>Make_LeavenedBread</defName>
-        <label>DO_Recipe_BakeLeavenedBread_Label</label>
-        <description>DO_Recipe_BakeLeavenedBread_Desc</description>
-        <jobString>DO_Recipe_BakeLeavenedBread_Job</jobString>
+        <label>bake white bread</label>
+        <description>Bake soft white bread from fermented dough in a bread oven.</description>
+        <jobString>Baking white bread.</jobString>
         <workAmount>520</workAmount>
         <skillRequirements>
             <Cooking>5</Cooking>
@@ -283,3 +283,4 @@
         <displayPriority>1020</displayPriority>
     </RecipeDef>
 </Defs>
+

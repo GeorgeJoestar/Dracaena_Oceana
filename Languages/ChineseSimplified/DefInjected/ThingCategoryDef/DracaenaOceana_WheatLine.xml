@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dracaena oceana -->
+  <DO_ItemCategory_Root.label>大洋之龙</DO_ItemCategory_Root.label>
+  <!-- EN: wheat food chain -->
+  <DO_ItemCategory_WheatLine.label>小麦食物链</DO_ItemCategory_WheatLine.label>
+  <!-- EN: wheat raw materials -->
+  <DO_ItemCategory_WheatRaw.label>小麦原料</DO_ItemCategory_WheatRaw.label>
+  <!-- EN: wheat intermediates -->
+  <DO_ItemCategory_WheatIntermediate.label>小麦中间产物</DO_ItemCategory_WheatIntermediate.label>
+  <!-- EN: wheat meals -->
+  <DO_ItemCategory_WheatMeals.label>小麦成品食物</DO_ItemCategory_WheatMeals.label>
+  
+</LanguageData>
