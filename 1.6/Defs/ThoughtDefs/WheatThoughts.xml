@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>AtePuls</defName>
+        <durationDays>0.8</durationDays>
+        <stages>
+            <li>
+                <label>DO_Thought_AtePuls_Label</label>
+                <description>DO_Thought_AtePuls_Desc</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AteMilitarisBread</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>DO_Thought_AteMilitarisBread_Label</label>
+                <description>DO_Thought_AteMilitarisBread_Desc</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AteLeavenedBread</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>DO_Thought_AteLeavenedBread_Label</label>
+                <description>DO_Thought_AteLeavenedBread_Desc</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

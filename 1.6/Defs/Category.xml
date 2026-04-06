@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--建筑分页-->
-	<DesignationCategoryDef>
-		<defName>Dracaena_Oceana_Category</defName>
-		<label>Dracaena Oceana</label>
-		<order>100</order>
-	</DesignationCategoryDef>
+    <DesignationCategoryDef>
+        <defName>Dracaena_Oceana_Category</defName>
+        <label>DO_DesignationCategory_Main_Label</label>
+        <order>100</order>
+    </DesignationCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_Root</defName>
+        <label>DO_ItemCategory_Root_Label</label>
+        <parent>Root</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatLine</defName>
+        <label>DO_ItemCategory_WheatLine_Label</label>
+        <parent>DO_ItemCategory_Root</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatRaw</defName>
+        <label>DO_ItemCategory_WheatRaw_Label</label>
+        <parent>DO_ItemCategory_WheatLine</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatIntermediate</defName>
+        <label>DO_ItemCategory_WheatIntermediate_Label</label>
+        <parent>DO_ItemCategory_WheatLine</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatMeals</defName>
+        <label>DO_ItemCategory_WheatMeals_Label</label>
+        <parent>DO_ItemCategory_WheatLine</parent>
+    </ThingCategoryDef>
 </Defs>

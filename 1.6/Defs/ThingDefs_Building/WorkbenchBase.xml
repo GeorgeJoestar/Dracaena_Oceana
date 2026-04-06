@@ -4,7 +4,7 @@
     <!-- Bench: Drac_bench_smithy -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_smithy</defName>
-        <label>aaaaa</label>
+        <label>Drac_bench_smithy.label</label>
         <description>Drac_bench_smithy.description</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
@@ -71,8 +71,8 @@
     <!-- Bench: Drac_bench_stove -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_stove</defName>
-        <label>aaa</label>
-        <description>aaaa</description>
+        <label>Drac_bench_stove.label</label>
+        <description>Drac_bench_stove.description</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/FueledStove</texPath>
@@ -130,10 +130,6 @@
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
-        <recipes>
-            <li>Make_UnfermentedDough</li>
-            <li>Make_FermentedDough</li>
-        </recipes>
         <researchPrerequisites>
             <li>ComplexClothing</li>
         </researchPrerequisites>
