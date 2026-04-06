@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <DO_MilitarisBread_DryMouth.label>dry mouth from hard bread</DO_MilitarisBread_DryMouth.label>
+  <DO_MilitarisBread_DryMouth.labelNoun>hard-bread dryness</DO_MilitarisBread_DryMouth.labelNoun>
+  <DO_MilitarisBread_DryMouth.description>A lingering dry-mouth feeling after eating dense hard bread. Eating is a bit slower.</DO_MilitarisBread_DryMouth.description>
+  <DO_LeavenedBread_WorkFocus.label>energized by white bread</DO_LeavenedBread_WorkFocus.label>
+  <DO_LeavenedBread_WorkFocus.labelNoun>white-bread focus</DO_LeavenedBread_WorkFocus.labelNoun>
+  <DO_LeavenedBread_WorkFocus.description>Good fermentation and proper baking leave the body warm and focused, improving work speed for a while.</DO_LeavenedBread_WorkFocus.description>
+</LanguageData>

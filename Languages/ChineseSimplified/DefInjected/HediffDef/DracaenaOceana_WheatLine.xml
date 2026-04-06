@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dry mouth from hard bread -->
+  <DO_MilitarisBread_DryMouth.label>硬面包口干</DO_MilitarisBread_DryMouth.label>
+  <!-- EN: hard-bread dryness -->
+  <DO_MilitarisBread_DryMouth.labelNoun>硬面包口干</DO_MilitarisBread_DryMouth.labelNoun>
+  <!-- EN: A lingering dry-mouth feeling after eating dense hard bread. Eating is a bit slower. -->
+  <DO_MilitarisBread_DryMouth.description>吃了干硬面包后，喉咙发干、咀嚼费力，进食速度略有下降。</DO_MilitarisBread_DryMouth.description>
+  
+  <!-- EN: energized by white bread -->
+  <DO_LeavenedBread_WorkFocus.label>白面包提神</DO_LeavenedBread_WorkFocus.label>
+  <!-- EN: white-bread focus -->
+  <DO_LeavenedBread_WorkFocus.labelNoun>白面包提神</DO_LeavenedBread_WorkFocus.labelNoun>
+  <!-- EN: Good fermentation and proper baking leave the body warm and focused, improving work speed for a while. -->
+  <DO_LeavenedBread_WorkFocus.description>良好发酵与烘焙让人身心舒畅，短时间内工作效率提升。</DO_LeavenedBread_WorkFocus.description>
+  
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <AtePuls.stages.ate_wheat_porridge.label>ate wheat porridge</AtePuls.stages.ate_wheat_porridge.label>
+  <AtePuls.stages.ate_wheat_porridge.description>It fills the stomach, but the texture is rough and the taste is bland.</AtePuls.stages.ate_wheat_porridge.description>
+  <AteMilitarisBread.stages.ate_military_bread.label>ate military bread</AteMilitarisBread.stages.ate_military_bread.label>
+  <AteMilitarisBread.stages.ate_military_bread.description>This bread is dry and hard. Useful for travel, unpleasant for daily meals.</AteMilitarisBread.stages.ate_military_bread.description>
+  <AteLeavenedBread.stages.ate_white_bread.label>ate white bread</AteLeavenedBread.stages.ate_white_bread.label>
+  <AteLeavenedBread.stages.ate_white_bread.description>So soft and fragrant. It feels like my teeth are in heaven.</AteLeavenedBread.stages.ate_white_bread.description>
+</LanguageData>

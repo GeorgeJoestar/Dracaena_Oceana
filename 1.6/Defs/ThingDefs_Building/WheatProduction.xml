@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BenchBase">
+        <defName>FermentationBucket</defName>
+        <label>fermentation bucket</label>
+        <description>A sealed bucket setup used to culture wheat yeast from flour.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Production/FermentationBucket</texPath>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <costList>
+            <Steel>25</Steel>
+            <WoodLog>35</WoodLog>
+        </costList>
+        <statBases>
+            <WorkToBuild>850</WorkToBuild>
+            <WorkTableWorkSpeedFactor>0.90</WorkTableWorkSpeedFactor>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <designationCategory>Dracaena_Oceana_Category</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>28</pathCost>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>Workshop</workTableRoomRole>
+        </building>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>Oven</defName>
+        <label>bread oven</label>
+        <description>A dedicated oven that keeps steady heat for high-quality leavened bread.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Production/FueledOven</texPath>
+            <drawSize>(2.0,2.0)</drawSize>
+            <drawOffset>(0,0,0.2)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <WorkToBuild>2200</WorkToBuild>
+            <WorkTableWorkSpeedFactor>1.2</WorkTableWorkSpeedFactor>
+            <MaxHitPoints>220</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <designationCategory>Dracaena_Oceana_Category</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>35</pathCost>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>Kitchen</workTableRoomRole>
+        </building>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
+</Defs>
+

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>AtePuls</defName>
+        <durationDays>0.8</durationDays>
+        <stages>
+            <li>
+                <label>ate wheat porridge</label>
+                <description>It fills the stomach, but the texture is rough and the taste is bland.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AteMilitarisBread</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>ate military bread</label>
+                <description>This bread is dry and hard. Useful for travel, unpleasant for daily meals.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AteLeavenedBread</defName>
+        <durationDays>1.0</durationDays>
+        <stages>
+            <li>
+                <label>ate white bread</label>
+                <description>So soft and fragrant. It feels like my teeth are in heaven.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>
+

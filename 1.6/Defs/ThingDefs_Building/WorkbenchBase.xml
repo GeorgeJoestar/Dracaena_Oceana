@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
     <!-- Bench: Drac_bench_smithy -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_smithy</defName>
-        <label>aaaaa</label>
-        <description>Drac_bench_smithy.description</description>
+        <label>draconic smithy</label>
+        <description>A rugged smithy used by Dracaena colonists for heavy metalwork.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/FueledSmithy</texPath>
@@ -71,8 +71,8 @@
     <!-- Bench: Drac_bench_stove -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_stove</defName>
-        <label>aaa</label>
-        <description>aaaa</description>
+        <label>draconic cookstove</label>
+        <description>A broad cookstove used for kneading and baking grain-based food.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/FueledStove</texPath>
@@ -130,10 +130,6 @@
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
-        <recipes>
-            <li>Make_UnfermentedDough</li>
-            <li>Make_FermentedDough</li>
-        </recipes>
         <researchPrerequisites>
             <li>ComplexClothing</li>
         </researchPrerequisites>
@@ -142,8 +138,8 @@
     <!-- Bench: Drac_bench_tailor -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_tailor</defName>
-        <label>Drac_bench_tailor.label</label>
-        <description>Drac_bench_tailor.description</description>
+        <label>draconic tailoring bench</label>
+        <description>A tailoring bench adapted for Dracaena apparel and handcraft work.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/HandTailorBench</texPath>
@@ -209,8 +205,8 @@
     <!-- Bench: Drac_bench_herb -->
     <ThingDef ParentName="BenchBase">
         <defName>Drac_bench_herb</defName>
-        <label>Drac_bench_herb.label</label>
-        <description>Drac_bench_herb.description</description>
+        <label>draconic agronomy bench</label>
+        <description>A processing bench for herbal materials and grain preparation.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/HerbBench</texPath>
@@ -273,3 +269,4 @@
         </researchPrerequisites>
     </ThingDef>
 </Defs>
+

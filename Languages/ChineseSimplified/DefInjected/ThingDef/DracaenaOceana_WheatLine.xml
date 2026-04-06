@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: wheat plant -->
+  <Plant_Wheat.label>小麦植株</Plant_Wheat.label>
+  <!-- EN: A staple grain crop cultivated by Dracaena settlers. It needs fertile soil and time, but supports a full milling and baking chain. -->
+  <Plant_Wheat.description>大洋之龙常用的主粮作物。需要较高肥力与较长生长期，但可支撑完整的制粉与烘焙生产链。</Plant_Wheat.description>
+  
+  <!-- EN: wheat ear -->
+  <WheatEar.label>麦穗</WheatEar.label>
+  <!-- EN: Harvested wheat ears. Basic grain material for porridge and flour. -->
+  <WheatEar.description>收获后的麦穗，是麦粥与面粉的基础原料。</WheatEar.description>
+  
+  <!-- EN: wheat flour -->
+  <Flour.label>小麦面粉</Flour.label>
+  <!-- EN: Ground wheat flour. Better digestibility than raw grain and the core input for dough and yeast. -->
+  <Flour.description>由小麦研磨而成。比生粮更易消化，是面团与酵母的核心输入。</Flour.description>
+  
+  <!-- EN: yeast culture -->
+  <Yeast.label>酵母种</Yeast.label>
+  <!-- EN: Active yeast cultivated from flour. Used to ferment dough for softer bread. -->
+  <Yeast.description>由面粉培养出的活性酵母，用于发酵面团并改善面包口感。</Yeast.description>
+  
+  <!-- EN: unfermented dough -->
+  <UnfermentedDough.label>无酵母面团</UnfermentedDough.label>
+  <!-- EN: Simple dough mixed from flour. It can be baked into hard travel bread. -->
+  <UnfermentedDough.description>仅由面粉调制的基础面团，可烤制耐储存的硬质面包。</UnfermentedDough.description>
+  
+  <!-- EN: fermented dough -->
+  <FermentedDough.label>有酵母面团</FermentedDough.label>
+  <!-- EN: Dough proofed with yeast. Requires more preparation, but yields much better bread. -->
+  <FermentedDough.description>加入酵母后醒发的面团。工序更复杂，但成品质量显著更高。</FermentedDough.description>
+  
+  <!-- EN: wheat porridge -->
+  <Puls.label>麦粥</Puls.label>
+  <!-- EN: A thin porridge boiled from cracked wheat. Cheap and filling, but not pleasant. -->
+  <Puls.description>将碎麦煮成的稀粥。成本低、能果腹，但口感和风味较差。</Puls.description>
+  
+  <!-- EN: military bread -->
+  <MilitarisBread.label>行军面包</MilitarisBread.label>
+  <!-- EN: Dense, dry field bread made from unfermented dough. Long-lasting and practical. -->
+  <MilitarisBread.description>以无酵母面团烤成的紧实干硬面包，耐放、便携，但食用体验较差。</MilitarisBread.description>
+  
+  <!-- EN: white bread -->
+  <LeavenedBread.label>白面包</LeavenedBread.label>
+  <!-- EN: Soft white bread baked from fermented dough. Time-intensive to produce, but exceptionally nourishing and satisfying. -->
+  <LeavenedBread.description>以发酵面团烤制的松软白面包。制作更耗时，但营养与口感更好。</LeavenedBread.description>
+  
+  <!-- EN: draconic smithy -->
+  <Drac_bench_smithy.label>龙人工匠锻造台</Drac_bench_smithy.label>
+  <!-- EN: A rugged smithy used by Dracaena colonists for heavy metalwork. -->
+  <Drac_bench_smithy.description>供大洋之龙殖民者进行重型金属加工的锻造台。</Drac_bench_smithy.description>
+  
+  <!-- EN: draconic cookstove -->
+  <Drac_bench_stove.label>龙人烹饪灶台</Drac_bench_stove.label>
+  <!-- EN: A broad cookstove used for kneading and baking grain-based food. -->
+  <Drac_bench_stove.description>用于和面、烹煮与烘烤谷物食物的灶台。</Drac_bench_stove.description>
+  
+  <!-- EN: draconic tailoring bench -->
+  <Drac_bench_tailor.label>龙人缝纫台</Drac_bench_tailor.label>
+  <!-- EN: A tailoring bench adapted for Dracaena apparel and handcraft work. -->
+  <Drac_bench_tailor.description>适配龙人体型与服饰工艺的缝纫工作台。</Drac_bench_tailor.description>
+  
+  <!-- EN: draconic agronomy bench -->
+  <Drac_bench_herb.label>龙人农务台</Drac_bench_herb.label>
+  <!-- EN: A processing bench for herbal materials and grain preparation. -->
+  <Drac_bench_herb.description>用于草本与粮食加工处理的农务工作台。</Drac_bench_herb.description>
+  
+  <!-- EN: fermentation bucket -->
+  <FermentationBucket.label>发酵桶</FermentationBucket.label>
+  <!-- EN: A sealed bucket setup used to culture wheat yeast from flour. -->
+  <FermentationBucket.description>用于将面粉培养为酵母种的密封发酵装置。</FermentationBucket.description>
+  
+  <!-- EN: bread oven -->
+  <Oven.label>面包烤炉</Oven.label>
+  <!-- EN: A dedicated oven that keeps steady heat for high-quality leavened bread. -->
+  <Oven.description>可稳定控温的专用烤炉，用于制作高品质发酵面包。</Oven.description>
+  
+</LanguageData>

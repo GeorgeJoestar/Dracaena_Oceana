@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mill wheat into flour -->
+  <Make_Flour.label>研磨面粉</Make_Flour.label>
+  <!-- EN: Process wheat ears into flour at the agronomy bench. -->
+  <Make_Flour.description>在农务台将麦穗加工成面粉。</Make_Flour.description>
+  <!-- EN: Milling flour. -->
+  <Make_Flour.jobString>正在研磨面粉。</Make_Flour.jobString>
+  
+  <!-- EN: mill wheat into flour (bulk) -->
+  <Make_Flour_Bulk.label>研磨面粉（批量）</Make_Flour_Bulk.label>
+  <!-- EN: Large-batch milling for stockpiling flour. -->
+  <Make_Flour_Bulk.description>批量加工麦穗，快速储备面粉。</Make_Flour_Bulk.description>
+  <!-- EN: Milling flour in bulk. -->
+  <Make_Flour_Bulk.jobString>正在批量研磨面粉。</Make_Flour_Bulk.jobString>
+  
+  <!-- EN: culture yeast -->
+  <Make_Yeast.label>培养酵母</Make_Yeast.label>
+  <!-- EN: Ferment flour into active yeast. -->
+  <Make_Yeast.description>将面粉发酵为活性酵母。</Make_Yeast.description>
+  <!-- EN: Culturing yeast. -->
+  <Make_Yeast.jobString>正在培养酵母。</Make_Yeast.jobString>
+  
+  <!-- EN: culture yeast (bulk) -->
+  <Make_Yeast_Bulk.label>培养酵母（批量）</Make_Yeast_Bulk.label>
+  <!-- EN: Prepare a larger batch of yeast for sustained baking. -->
+  <Make_Yeast_Bulk.description>大量培养酵母，以支持持续烘焙。</Make_Yeast_Bulk.description>
+  <!-- EN: Culturing yeast in bulk. -->
+  <Make_Yeast_Bulk.jobString>正在批量培养酵母。</Make_Yeast_Bulk.jobString>
+  
+  <!-- EN: mix unfermented dough -->
+  <Make_UnfermentedDough.label>调制无酵母面团</Make_UnfermentedDough.label>
+  <!-- EN: Mix flour into basic dough for hard bread. -->
+  <Make_UnfermentedDough.description>将面粉混合为基础面团，用于制作硬质面包。</Make_UnfermentedDough.description>
+  <!-- EN: Mixing unfermented dough. -->
+  <Make_UnfermentedDough.jobString>正在调制无酵母面团。</Make_UnfermentedDough.jobString>
+  
+  <!-- EN: mix fermented dough -->
+  <Make_FermentedDough.label>调制有酵母面团</Make_FermentedDough.label>
+  <!-- EN: Add yeast while mixing dough to prepare high-quality bread dough. -->
+  <Make_FermentedDough.description>在和面阶段加入酵母，制备高品质发酵面团。</Make_FermentedDough.description>
+  <!-- EN: Mixing fermented dough. -->
+  <Make_FermentedDough.jobString>正在调制有酵母面团。</Make_FermentedDough.jobString>
+  
+  <!-- EN: cook wheat porridge -->
+  <Make_Puls.label>烹煮麦粥</Make_Puls.label>
+  <!-- EN: Boil wheat into a basic porridge. It is cheap but lowers mood. -->
+  <Make_Puls.description>将麦穗煮成基础麦粥，成本低但会带来负面心情。</Make_Puls.description>
+  <!-- EN: Cooking wheat porridge. -->
+  <Make_Puls.jobString>正在烹煮麦粥。</Make_Puls.jobString>
+  
+  <!-- EN: bake military bread -->
+  <Make_MilitarisBread.label>烘烤行军面包</Make_MilitarisBread.label>
+  <!-- EN: Bake durable field bread from unfermented dough. -->
+  <Make_MilitarisBread.description>将无酵母面团烤成耐储存的行军面包。</Make_MilitarisBread.description>
+  <!-- EN: Baking military bread. -->
+  <Make_MilitarisBread.jobString>正在烘烤行军面包。</Make_MilitarisBread.jobString>
+  
+  <!-- EN: bake white bread -->
+  <Make_LeavenedBread.label>烘烤白面包</Make_LeavenedBread.label>
+  <!-- EN: Bake soft white bread from fermented dough in a bread oven. -->
+  <Make_LeavenedBread.description>将有酵母面团在烤炉中烘烤为松软白面包。</Make_LeavenedBread.description>
+  <!-- EN: Baking white bread. -->
+  <Make_LeavenedBread.jobString>正在烘烤白面包。</Make_LeavenedBread.jobString>
+  
+</LanguageData>

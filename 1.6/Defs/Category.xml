@@ -1,9 +1,39 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--建筑分页-->
-	<DesignationCategoryDef>
-		<defName>Dracaena_Oceana_Category</defName>
-		<label>Dracaena Oceana</label>
-		<order>100</order>
-	</DesignationCategoryDef>
+    <DesignationCategoryDef>
+        <defName>Dracaena_Oceana_Category</defName>
+        <label>dracaena oceana</label>
+        <order>100</order>
+    </DesignationCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_Root</defName>
+        <label>dracaena oceana</label>
+        <parent>Root</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatLine</defName>
+        <label>wheat food chain</label>
+        <parent>DO_ItemCategory_Root</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatRaw</defName>
+        <label>wheat raw materials</label>
+        <parent>DO_ItemCategory_WheatLine</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatIntermediate</defName>
+        <label>wheat intermediates</label>
+        <parent>DO_ItemCategory_WheatLine</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_WheatMeals</defName>
+        <label>wheat meals</label>
+        <parent>DO_ItemCategory_WheatLine</parent>
+    </ThingCategoryDef>
 </Defs>
+
