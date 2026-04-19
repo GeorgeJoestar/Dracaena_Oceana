@@ -341,10 +341,27 @@
                 <weaponList>
                     
                 </weaponList>
-                <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
-                <apparelList>
-                    
-                </apparelList>
+                 <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+                 <apparelList>
+                    <li>Apparel_DO_ClothOne</li>
+                    <li>Apparel_DO_Artist</li>
+                    <li>Apparel_DO_ArtistHat</li>
+                    <li>Apparel_DO_BlackSmith</li>
+                    <li>Apparel_DO_Farmer</li>
+                    <li>Apparel_DO_StrawHat</li>
+                    <li>Apparel_DO_LeatherArmor</li>
+                    <li>Apparel_DO_PaddedArmor</li>
+                    <li>Apparel_DO_HeadArmor</li>
+                    <li>Apparel_DO_GaleaAttica</li>
+                    <li>Apparel_DO_GaleaLegionarii</li>
+                    <li>Apparel_DO_GaleaCentunarii</li>
+                    <li>Apparel_DO_LoricaHamataOne</li>
+                    <li>Apparel_DO_LoricaHamataTwo</li>
+                    <li>Apparel_DO_LoricaHamataGravita</li>
+                    <li>Apparel_DO_LoricaSquamataOne</li>
+                    <li>Apparel_DO_LoricaSquamataTwo</li>
+                    <li>Apparel_DO_LoricaSquamataGravita</li>
+                 </apparelList>
                 <whiteApparelList>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
                     <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>

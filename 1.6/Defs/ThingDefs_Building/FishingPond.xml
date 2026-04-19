@@ -2,20 +2,23 @@
 <Defs>
     <ThingDef Name="DO_FishingPondBase" ParentName="BenchBase" Abstract="True">
         <thingClass>Building_WorkTable</thingClass>
+        <minifiedDef Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False" />
+        <interactionCellIcon Inherit="False" IsNull="True" />
         <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Building/Production/Fishpond1</texPath>
-            <drawSize>(2.6,2.0)</drawSize>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Production/BaseFishpond</texPath>
+            <drawSize>(4.0,4.0)</drawSize>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <size>(2,2)</size>
+        <size>(4,3)</size>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>1</fillPercent>
         <passability>Impassable</passability>
         <pathCost>40</pathCost>
         <useHitPoints>true</useHitPoints>
         <hasInteractionCell>true</hasInteractionCell>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
         <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
         <tickerType>Normal</tickerType>
@@ -29,6 +32,7 @@
         </building>
         <placeWorkers>
             <li>PlaceWorker_NotUnderRoof</li>
+            <li>RimWorldProj.FishingPond.PlaceWorker_FishingPondShoreline</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
     </ThingDef>
@@ -41,9 +45,9 @@
         <costStuffCount>0</costStuffCount>
         <designationCategory>Dracaena_Oceana_Category</designationCategory>
         <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Building/Production/Fishpond1</texPath>
-            <drawSize>(2.6,2.0)</drawSize>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Production/BaseFishpond</texPath>
+            <drawSize>(4.0,4.0)</drawSize>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <statBases>
@@ -70,9 +74,9 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Building/Production/Fishpond2</texPath>
-            <drawSize>(2.6,2.0)</drawSize>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Production/Half-StoneFishpond</texPath>
+            <drawSize>(4.0,4.0)</drawSize>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <statBases>
@@ -120,9 +124,9 @@
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Building/Production/Fishpond3</texPath>
-            <drawSize>(2.6,2.0)</drawSize>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Production/StoneFishpond</texPath>
+            <drawSize>(4.0,4.0)</drawSize>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <statBases>
@@ -143,6 +147,7 @@
         <placeWorkers>
             <li>PlaceWorker_WatchArea</li>
             <li>PlaceWorker_NotUnderRoof</li>
+            <li>RimWorldProj.FishingPond.PlaceWorker_FishingPondShoreline</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <comps>

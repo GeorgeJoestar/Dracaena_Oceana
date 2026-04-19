@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Apparel_DO_ClothOne.label>draconic commonwear</Apparel_DO_ClothOne.label>
+  <Apparel_DO_ClothOne.description>Everyday clothing tailored for Dracaena bodies. It serves as their baseline garment and can be made from ordinary fabrics.</Apparel_DO_ClothOne.description>
+  <Apparel_DO_Artist.label>artist attire</Apparel_DO_Artist.label>
+  <Apparel_DO_Artist.description>A decorated overgarment worn by Dracaena artisans. Its balanced cut favors comfort, expression, and long hours at the worktable.</Apparel_DO_Artist.description>
+  <Apparel_DO_ArtistHat.label>artist cap</Apparel_DO_ArtistHat.label>
+  <Apparel_DO_ArtistHat.description>A soft cap favored by Dracaena painters and sculptors. It is light to wear and lends a little extra presence in conversation.</Apparel_DO_ArtistHat.description>
+  <Apparel_DO_BlackSmith.label>smithwork attire</Apparel_DO_BlackSmith.label>
+  <Apparel_DO_BlackSmith.description>A reinforced Dracaena smith's outfit meant for hot forges and long production shifts. It trades some comfort for utility and toughness.</Apparel_DO_BlackSmith.description>
+  <Apparel_DO_Farmer.label>fieldwear</Apparel_DO_Farmer.label>
+  <Apparel_DO_Farmer.description>A broad-cut work outfit for marsh fields and grain handling. It keeps a Dracaena mobile while improving the pace of sowing and harvest work.</Apparel_DO_Farmer.description>
+  <Apparel_DO_StrawHat.label>straw hat</Apparel_DO_StrawHat.label>
+  <Apparel_DO_StrawHat.description>A wide straw hat woven for farm work under harsh sun. Dracaena growers favor it for long days in exposed fields.</Apparel_DO_StrawHat.description>
+  <Apparel_DO_LeatherArmor.label>leather armor</Apparel_DO_LeatherArmor.label>
+  <Apparel_DO_LeatherArmor.description>Layered leather protection cut to fit a Dracaena frame. It is light enough for travel, but sturdier than ordinary clothing.</Apparel_DO_LeatherArmor.description>
+  <Apparel_DO_PaddedArmor.label>padded armor</Apparel_DO_PaddedArmor.label>
+  <Apparel_DO_PaddedArmor.description>A padded defense coat stitched for Dracaena militia. It cannot match solid metal, but it softens lighter blows without excessive weight.</Apparel_DO_PaddedArmor.description>
+  <Apparel_DO_HeadArmor.label>draconic crested helmet</Apparel_DO_HeadArmor.label>
+  <Apparel_DO_HeadArmor.description>A forged helmet built for the shape of a Dracaena skull. The crest helps it remain visually distinct on the battlefield.</Apparel_DO_HeadArmor.description>
+  <Apparel_DO_GaleaAttica.label>Attican galea</Apparel_DO_GaleaAttica.label>
+  <Apparel_DO_GaleaAttica.description>A light military galea with cheek protection and improved brow reinforcement. It is a disciplined upgrade over the basic crested helmet.</Apparel_DO_GaleaAttica.description>
+  <Apparel_DO_GaleaLegionarii.label>legionary galea</Apparel_DO_GaleaLegionarii.label>
+  <Apparel_DO_GaleaLegionarii.description>A sealed combat helmet with modern internals and a classical silhouette. Legionaries wear it when lighter spacer armor is required.</Apparel_DO_GaleaLegionarii.description>
+  <Apparel_DO_GaleaCentunarii.label>centurion galea</Apparel_DO_GaleaCentunarii.label>
+  <Apparel_DO_GaleaCentunarii.description>A heavily plated command helmet built to break the line alongside elite Dracaena shock troops.</Apparel_DO_GaleaCentunarii.description>
+  <Apparel_DO_LoricaHamataOne.label>lorica hamata I</Apparel_DO_LoricaHamataOne.label>
+  <Apparel_DO_LoricaHamataOne.description>A mail-based torso defense patterned after old Dracaena military kit. It offers dependable all-round protection without the cost of powered armor.</Apparel_DO_LoricaHamataOne.description>
+  <Apparel_DO_LoricaHamataTwo.label>lorica hamata II</Apparel_DO_LoricaHamataTwo.label>
+  <Apparel_DO_LoricaHamataTwo.description>An improved hamata harness with denser mail and reinforced joints. It is heavier than the first pattern, but markedly more secure.</Apparel_DO_LoricaHamataTwo.description>
+  <Apparel_DO_LoricaHamataGravita.label>gravita hamata</Apparel_DO_LoricaHamataGravita.label>
+  <Apparel_DO_LoricaHamataGravita.description>A powered mail-shell hybrid that keeps the traditional hamata profile while using spacer materials to absorb punishment far beyond conventional armor.</Apparel_DO_LoricaHamataGravita.description>
+  <Apparel_DO_LoricaSquamataOne.label>lorica squamata I</Apparel_DO_LoricaSquamataOne.label>
+  <Apparel_DO_LoricaSquamataOne.description>A scale-pattern body harness that favors agility over raw mass. It is easier to move in than heavy mail, but still meant for the front line.</Apparel_DO_LoricaSquamataOne.description>
+  <Apparel_DO_LoricaSquamataTwo.label>lorica squamata II</Apparel_DO_LoricaSquamataTwo.label>
+  <Apparel_DO_LoricaSquamataTwo.description>An upgraded scale harness with denser lamination and improved shoulder coverage. It keeps more mobility than mail while offering better protection than the first pattern.</Apparel_DO_LoricaSquamataTwo.description>
+  <Apparel_DO_LoricaSquamataGravita.label>gravita squamata</Apparel_DO_LoricaSquamataGravita.label>
+  <Apparel_DO_LoricaSquamataGravita.description>A light powered scale suit optimized for scouting and fast attack. It offers spacer-grade protection while preserving more speed than the heavier gravita hamata.</Apparel_DO_LoricaSquamataGravita.description>
+</LanguageData>

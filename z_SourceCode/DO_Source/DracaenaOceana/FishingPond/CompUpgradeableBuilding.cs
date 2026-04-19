@@ -40,12 +40,16 @@ namespace RimWorldProj.FishingPond
 
             bool isQueued = IsUpgradeQueued(table);
             bool recipeAvailable = Props.upgradeRecipeDef.AvailableNow && Props.upgradeRecipeDef.AvailableOnNow(parent);
+            Material iconMaterial;
+            Texture iconTexture = Widgets.GetIconFor(Props.nextStageDef, out iconMaterial);
 
-            Command_Action command = new Command_Action
+            Command_UpgradeFishingPond command = new Command_UpgradeFishingPond
             {
                 defaultLabel = Props.commandLabelKey.Translate(Props.nextStageDef.LabelCap),
                 defaultDesc = Props.commandDescKey.Translate(parent.LabelCap, Props.nextStageDef.LabelCap, Props.upgradeRecipeDef.LabelCap),
-                icon = TexCommand.Install,
+                icon = iconTexture,
+                overrideMaterial = iconMaterial,
+                defaultIconColor = Props.nextStageDef.uiIconColor,
                 action = QueueUpgrade
             };
 
@@ -138,4 +142,3 @@ namespace RimWorldProj.FishingPond
         }
     }
 }
-

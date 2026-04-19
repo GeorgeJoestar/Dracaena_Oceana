@@ -270,12 +270,15 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="FishingPond\Command_UpgradeFishingPond.cs" />
         <Compile Include="FishingPond\CompFishingPondProduction.cs" />
         <Compile Include="FishingPond\CompUpgradeableBuilding.cs" />
         <Compile Include="FishingPond\DefModExtension_UpgradeRecipe.cs" />
         <Compile Include="FishingPond\FishingPondUpgradeUtility.cs" />
+        <Compile Include="FishingPond\PlaceWorker_FishingPondShoreline.cs" />
         <Compile Include="FishingPond\RecipeWorker_StartPondCycle.cs" />
         <Compile Include="FishingPond\RecipeWorker_UpgradeFishingPond.cs" />
+        <Compile Include="Apparel\DracaenaBodyTypePatches.cs" />
         <Compile Include="RNGscript\MilianComponentResearchUtility.cs" />
         <Compile Include="RNGscript\Recipe_MilianComponentResearch.cs" />
     <Compile Include="TestLogic\CustomWindow.cs" />

@@ -15,4 +15,6 @@
   <DO_FishingPond_CycleStarted>{0} cycle started.</DO_FishingPond_CycleStarted>
   <DO_FishingPond_CycleAlreadyActive>{0} is already processing a cycle.</DO_FishingPond_CycleAlreadyActive>
   <DO_FishingPond_CycleFinished>{0} cycle finished and fish were produced.</DO_FishingPond_CycleFinished>
+  <DO_FishingPond_PlaceNeedsTopWater>The pond's upper edge must touch water.</DO_FishingPond_PlaceNeedsTopWater>
+  <DO_FishingPond_PlaceNeedsBottomLand>The pond's lower edge must touch land.</DO_FishingPond_PlaceNeedsBottomLand>
 </LanguageData>

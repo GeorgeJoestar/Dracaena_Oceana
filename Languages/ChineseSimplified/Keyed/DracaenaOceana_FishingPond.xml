@@ -15,6 +15,8 @@
   <DO_FishingPond_CycleAlreadyActive>{0} 当前已在生产周期中。</DO_FishingPond_CycleAlreadyActive>
   <DO_FishingPond_CycleFinished>{0} 周期结束，已产出渔获。</DO_FishingPond_CycleFinished>
   <DO_FishingPond_CycleBlockedRoofedInspect>周期已暂停：鱼塘被屋顶覆盖，移除屋顶后继续。</DO_FishingPond_CycleBlockedRoofedInspect>
+  <DO_FishingPond_PlaceNeedsTopWater>鱼塘上边必须有至少一格贴水。</DO_FishingPond_PlaceNeedsTopWater>
+  <DO_FishingPond_PlaceNeedsBottomLand>鱼塘下边必须有至少一格贴陆地。</DO_FishingPond_PlaceNeedsBottomLand>
 </LanguageData>
 
 

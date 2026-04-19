@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>Make_Apparel_DO_ClothOne</defName>
+    <label>make draconic commonwear</label>
+    <description>Tailor draconic commonwear from textile materials while preserving its original colors.</description>
+    <jobString>Tailoring draconic commonwear.</jobString>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <displayPriority>200</displayPriority>
+    <recipeUsers>
+      <li>Drac_bench_tailor</li>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+          <stuffCategoriesToAllow>
+            <li>Fabric</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>55</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Root</li>
+      </categories>
+      <stuffCategoriesToAllow>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <Apparel_DO_ClothOne>1</Apparel_DO_ClothOne>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_Apparel_DO_LeatherArmor</defName>
+    <label>make draconic leather armor</label>
+    <description>Craft fixed-color draconic leather armor from suitable leathers.</description>
+    <jobString>Crafting draconic leather armor.</jobString>
+    <workAmount>6500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <displayPriority>220</displayPriority>
+    <recipeUsers>
+      <li>Drac_bench_tailor</li>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+          <stuffCategoriesToAllow>
+            <li>Leathery</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>85</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Root</li>
+      </categories>
+      <stuffCategoriesToAllow>
+        <li>Leathery</li>
+      </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <Apparel_DO_LeatherArmor>1</Apparel_DO_LeatherArmor>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_Apparel_DO_PaddedArmor</defName>
+    <label>make draconic padded armor</label>
+    <description>Craft fixed-color draconic padded armor from textile materials.</description>
+    <jobString>Crafting draconic padded armor.</jobString>
+    <workAmount>8500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <displayPriority>222</displayPriority>
+    <recipeUsers>
+      <li>Drac_bench_tailor</li>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+          <stuffCategoriesToAllow>
+            <li>Fabric</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>70</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Root</li>
+      </categories>
+      <stuffCategoriesToAllow>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <Apparel_DO_PaddedArmor>1</Apparel_DO_PaddedArmor>
+    </products>
+  </RecipeDef>
+</Defs>

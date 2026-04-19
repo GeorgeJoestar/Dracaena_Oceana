@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Make_Apparel_DO_ClothOne.label>制作龙人常服</Make_Apparel_DO_ClothOne.label>
+  <Make_Apparel_DO_ClothOne.description>使用纺织原料制作严格保持原图配色的龙人常服。</Make_Apparel_DO_ClothOne.description>
+  <Make_Apparel_DO_ClothOne.jobString>正在缝制龙人常服。</Make_Apparel_DO_ClothOne.jobString>
+
+  <Make_Apparel_DO_LeatherArmor.label>制作龙人皮甲</Make_Apparel_DO_LeatherArmor.label>
+  <Make_Apparel_DO_LeatherArmor.description>使用皮革材料制作严格保持原图配色的龙人皮甲。</Make_Apparel_DO_LeatherArmor.description>
+  <Make_Apparel_DO_LeatherArmor.jobString>正在制作龙人皮甲。</Make_Apparel_DO_LeatherArmor.jobString>
+
+  <Make_Apparel_DO_PaddedArmor.label>制作龙人棉甲</Make_Apparel_DO_PaddedArmor.label>
+  <Make_Apparel_DO_PaddedArmor.description>使用纺织原料制作严格保持原图配色的龙人棉甲。</Make_Apparel_DO_PaddedArmor.description>
+  <Make_Apparel_DO_PaddedArmor.jobString>正在制作龙人棉甲。</Make_Apparel_DO_PaddedArmor.jobString>
+</LanguageData>

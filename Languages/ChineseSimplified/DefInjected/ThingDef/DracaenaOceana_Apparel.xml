@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Apparel_DO_ClothOne.label>龙人常服</Apparel_DO_ClothOne.label>
+  <Apparel_DO_ClothOne.description>按大洋之龙体型裁制的日常基础服装，也是她们默认穿着的底层衣物，可用普通织物制作。</Apparel_DO_ClothOne.description>
+  <Apparel_DO_Artist.label>艺匠礼装</Apparel_DO_Artist.label>
+  <Apparel_DO_Artist.description>供大洋之龙艺术工作者穿着的装饰性外衣，兼顾舒适、体面与长时间创作时的活动性。</Apparel_DO_Artist.description>
+  <Apparel_DO_ArtistHat.label>艺匠便帽</Apparel_DO_ArtistHat.label>
+  <Apparel_DO_ArtistHat.description>深受龙人画师与雕刻师喜爱的软帽，佩戴轻便，也能让穿戴者在社交场合更显从容。</Apparel_DO_ArtistHat.description>
+  <Apparel_DO_BlackSmith.label>锻工服</Apparel_DO_BlackSmith.label>
+  <Apparel_DO_BlackSmith.description>为高温熔炉与长时间锻造作业准备的龙人工装，牺牲部分舒适度来换取耐用与实用性。</Apparel_DO_BlackSmith.description>
+  <Apparel_DO_Farmer.label>农工服</Apparel_DO_Farmer.label>
+  <Apparel_DO_Farmer.description>适合湿地农田与谷物处理工作的宽松服装，让大洋之龙在播种与收获时更加灵活高效。</Apparel_DO_Farmer.description>
+  <Apparel_DO_StrawHat.label>草帽</Apparel_DO_StrawHat.label>
+  <Apparel_DO_StrawHat.description>为烈日下农作而编织的宽沿草帽，是龙人农夫长时间露天劳作时常见的装备。</Apparel_DO_StrawHat.description>
+  <Apparel_DO_LeatherArmor.label>皮甲</Apparel_DO_LeatherArmor.label>
+  <Apparel_DO_LeatherArmor.description>依照大洋之龙体型裁制的叠层皮甲，足够轻便，适合远行，也比普通衣物更耐打击。</Apparel_DO_LeatherArmor.description>
+  <Apparel_DO_PaddedArmor.label>衬垫甲</Apparel_DO_PaddedArmor.label>
+  <Apparel_DO_PaddedArmor.description>为龙人民兵缝制的厚实防护外衣，虽然比不上实心金属甲，但足以缓冲轻中度攻击。</Apparel_DO_PaddedArmor.description>
+  <Apparel_DO_HeadArmor.label>龙纹冠盔</Apparel_DO_HeadArmor.label>
+  <Apparel_DO_HeadArmor.description>为大洋之龙头骨形状打造的金属头盔，顶部冠饰让它在战场上更易辨认。</Apparel_DO_HeadArmor.description>
+  <Apparel_DO_GaleaAttica.label>阿提卡盔</Apparel_DO_GaleaAttica.label>
+  <Apparel_DO_GaleaAttica.description>带有护颊与加强额甲的轻型军用头盔，是基础冠盔之上的纪律化改进型号。</Apparel_DO_GaleaAttica.description>
+  <Apparel_DO_GaleaLegionarii.label>军团盔</Apparel_DO_GaleaLegionarii.label>
+  <Apparel_DO_GaleaLegionarii.description>拥有现代内构却保留古典轮廓的密封战斗头盔，供需要较轻太空级防护的军团士兵使用。</Apparel_DO_GaleaLegionarii.description>
+  <Apparel_DO_GaleaCentunarii.label>百夫长盔</Apparel_DO_GaleaCentunarii.label>
+  <Apparel_DO_GaleaCentunarii.description>用于率领精锐冲锋队的重型指挥头盔，装甲厚重，专为正面突破而生。</Apparel_DO_GaleaCentunarii.description>
+  <Apparel_DO_LoricaHamataOne.label>锁子甲 I 型</Apparel_DO_LoricaHamataOne.label>
+  <Apparel_DO_LoricaHamataOne.description>沿袭古老龙人军装思路的链甲主体，为穿戴者提供可靠而均衡的全身防护。</Apparel_DO_LoricaHamataOne.description>
+  <Apparel_DO_LoricaHamataTwo.label>锁子甲 II 型</Apparel_DO_LoricaHamataTwo.label>
+  <Apparel_DO_LoricaHamataTwo.description>通过更密实的甲环与更强的关节补强升级而来的锁子甲型号，比初型更重，但防护也更扎实。</Apparel_DO_LoricaHamataTwo.description>
+  <Apparel_DO_LoricaHamataGravita.label>重引锁子甲</Apparel_DO_LoricaHamataGravita.label>
+  <Apparel_DO_LoricaHamataGravita.description>结合动力结构与传统锁甲轮廓的高阶护甲，使用太空级材料后，其承伤能力远超常规军甲。</Apparel_DO_LoricaHamataGravita.description>
+  <Apparel_DO_LoricaSquamataOne.label>鳞片甲 I 型</Apparel_DO_LoricaSquamataOne.label>
+  <Apparel_DO_LoricaSquamataOne.description>更偏重机动性的鳞片式护甲，比重锁甲更容易活动，但依旧是正面作战用的可靠防具。</Apparel_DO_LoricaSquamataOne.description>
+  <Apparel_DO_LoricaSquamataTwo.label>鳞片甲 II 型</Apparel_DO_LoricaSquamataTwo.label>
+  <Apparel_DO_LoricaSquamataTwo.description>通过更致密的覆片与更好的肩部包覆升级而成，在灵活性与防护之间取得更稳妥的平衡。</Apparel_DO_LoricaSquamataTwo.description>
+  <Apparel_DO_LoricaSquamataGravita.label>重引鳞片甲</Apparel_DO_LoricaSquamataGravita.label>
+  <Apparel_DO_LoricaSquamataGravita.description>为侦察与快速突击而优化的动力鳞甲，具备太空级防护，同时比重引锁子甲保留更多机动性。</Apparel_DO_LoricaSquamataGravita.description>
+</LanguageData>

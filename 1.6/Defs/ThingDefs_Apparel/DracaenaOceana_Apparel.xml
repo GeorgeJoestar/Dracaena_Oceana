@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef Name="DO_ApparelTailorBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_tailor</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="DO_ApparelTailorPrimitiveBase" ParentName="DO_ApparelTailorBase" Abstract="True">
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_tailor</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="DO_HatTailorBase" ParentName="HatMakeableBase" Abstract="True">
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_tailor</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="DO_HatTailorPrimitiveBase" ParentName="DO_HatTailorBase" Abstract="True">
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_tailor</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="DO_BodyShellClothingBase" ParentName="DO_ApparelTailorBase" Abstract="True">
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef Name="DO_ArmorBodySmithBase" ParentName="ArmorSmithableBase" Abstract="True">
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_smithy</li>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="DO_ArmorHelmetSmithBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_smithy</li>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="DO_ArmorBodyTechBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_smithy</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="DO_ArmorHelmetTechBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+        <li>Drac_bench_smithy</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ApparelTailorPrimitiveBase">
+    <defName>Apparel_DO_ClothOne</defName>
+    <label>draconic commonwear</label>
+    <description>Everyday clothing tailored for Dracaena bodies. It serves as their baseline garment and can be made from ordinary fabrics.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoClothOne_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>3</generateCommonality>
+    <costList>
+      <Cloth>55</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>110</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.55</Mass>
+      <ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.04</ArmorRating_Heat>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoClothOne</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker Inherit="False" />
+  </ThingDef>
+
+  <ThingDef ParentName="DO_BodyShellClothingBase">
+    <defName>Apparel_DO_Artist</defName>
+    <label>artist attire</label>
+    <description>A decorated overgarment worn by Dracaena artisans. Its balanced cut favors comfort, expression, and long hours at the worktable.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoArtist_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.7</generateCommonality>
+    <costList>
+      <Cloth>55</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>3200</WorkToMake>
+      <Mass>0.65</Mass>
+      <Insulation_Cold>12</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <GlobalLearningFactor>0.05</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoArtist</wornGraphicPath>
+      <tags>
+        <li>IndustrialAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>210</displayPriority>
+    </recipeMaker>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_HatTailorBase">
+    <defName>Apparel_DO_ArtistHat</defName>
+    <label>artist cap</label>
+    <description>A soft cap favored by Dracaena painters and sculptors. It is light to wear and lends a little extra presence in conversation.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoArtistHat_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.5</generateCommonality>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.12</Mass>
+      <Insulation_Cold>1.5</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoArtistHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>102</displayPriority>
+    </recipeMaker>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_BodyShellClothingBase">
+    <defName>Apparel_DO_BlackSmith</defName>
+    <label>smithwork attire</label>
+    <description>A reinforced Dracaena smith's outfit meant for hot forges and long production shifts. It trades some comfort for utility and toughness.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoBlackSmith_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.7</generateCommonality>
+    <costList>
+      <Cloth>35</Cloth>
+      <Steel>30</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>5200</WorkToMake>
+      <Mass>1.8</Mass>
+      <ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.12</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>2.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.03</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoBlackSmith</wornGraphicPath>
+      <tags>
+        <li>IndustrialAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>212</displayPriority>
+    </recipeMaker>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_BodyShellClothingBase">
+    <defName>Apparel_DO_Farmer</defName>
+    <label>fieldwear</label>
+    <description>A broad-cut work outfit for marsh fields and grain handling. It keeps a Dracaena mobile while improving the pace of sowing and harvest work.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoFarmer_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.8</generateCommonality>
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>95</MaxHitPoints>
+      <WorkToMake>2800</WorkToMake>
+      <Mass>0.45</Mass>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoFarmer</wornGraphicPath>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>214</displayPriority>
+    </recipeMaker>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_HatTailorBase">
+    <defName>Apparel_DO_StrawHat</defName>
+    <label>straw hat</label>
+    <description>A wide straw hat woven for farm work under harsh sun. Dracaena growers favor it for long days in exposed fields.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoStrawHat_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.8</generateCommonality>
+    <costList>
+      <Hay>25</Hay>
+    </costList>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.08</Mass>
+      <Insulation_Cold>0.5</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantHarvestYield>0.05</PlantHarvestYield>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoStrawHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>103</displayPriority>
+    </recipeMaker>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_BodyShellClothingBase">
+    <defName>Apparel_DO_LeatherArmor</defName>
+    <label>leather armor</label>
+    <description>Layered leather protection cut to fit a Dracaena frame. It is light enough for travel, but sturdier than ordinary clothing.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoLeatherArmor_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.5</generateCommonality>
+    <costList>
+      <Leather_Plain>85</Leather_Plain>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <WorkToMake>6500</WorkToMake>
+      <Mass>2.5</Mass>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.83</ArmorRating_Heat>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>2.4</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoLeatherArmor</wornGraphicPath>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker Inherit="False" />
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_BodyShellClothingBase">
+    <defName>Apparel_DO_PaddedArmor</defName>
+    <label>padded armor</label>
+    <description>A padded defense coat stitched for Dracaena militia. It cannot match solid metal, but it softens lighter blows without excessive weight.</description>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoPaddedArmor_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.4</generateCommonality>
+    <costList>
+      <Cloth>70</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>8500</WorkToMake>
+      <Mass>3.4</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.13</ArmorRating_Heat>
+      <Insulation_Cold>11</Insulation_Cold>
+      <Insulation_Heat>3.2</Insulation_Heat>
+      <EquipDelay>3.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.03</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoPaddedArmor</wornGraphicPath>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker Inherit="False" />
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorHelmetSmithBase">
+    <defName>Apparel_DO_HeadArmor</defName>
+    <label>draconic crested helmet</label>
+    <description>A forged helmet built for the shape of a Dracaena skull. The crest helps it remain visually distinct on the battlefield.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoheadArmor_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <generateCommonality>0.3</generateCommonality>
+    <costList>
+      <Steel>35</Steel>
+    </costList>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.8</Mass>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.12</ArmorRating_Heat>
+      <Insulation_Cold>1.5</Insulation_Cold>
+      <Insulation_Heat>0.5</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <displayPriority>200</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoheadArmor</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorHelmetSmithBase">
+    <defName>Apparel_DO_GaleaAttica</defName>
+    <label>Attican galea</label>
+    <description>A light military galea with cheek protection and improved brow reinforcement. It is a disciplined upgrade over the basic crested helmet.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoGaleaAttica_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <generateCommonality>0.25</generateCommonality>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>130</MaxHitPoints>
+      <Mass>2.1</Mass>
+      <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.18</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <displayPriority>205</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoGaleaAttica</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorHelmetTechBase">
+    <defName>Apparel_DO_GaleaLegionarii</defName>
+    <label>legionary galea</label>
+    <description>A sealed combat helmet with modern internals and a classical silhouette. Legionaries wear it when lighter spacer armor is required.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoGaleaLegionarii_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <generateCommonality>0.12</generateCommonality>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Uranium>10</Uranium>
+    </costList>
+    <statBases>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>110</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoGaleaLegionarii</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+    </equippedStatOffsets>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorHelmetTechBase">
+    <defName>Apparel_DO_GaleaCentunarii</defName>
+    <label>centurion galea</label>
+    <description>A heavily plated command helmet built to break the line alongside elite Dracaena shock troops.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoGaleaCentunarii_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <generateCommonality>0.06</generateCommonality>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <Uranium>20</Uranium>
+    </costList>
+    <statBases>
+      <WorkToMake>26250</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>2</Mass>
+      <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.60</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>120</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoGaleaCentunarii</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.68</VacuumResistance>
+    </equippedStatOffsets>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorBodySmithBase">
+    <defName>Apparel_DO_LoricaHamataOne</defName>
+    <label>lorica hamata I</label>
+    <description>A mail-based torso defense patterned after old Dracaena military kit. It offers dependable all-round protection without the cost of powered armor.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoLoricaHamataOne_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.24</generateCommonality>
+    <costList>
+      <Steel>130</Steel>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>230</MaxHitPoints>
+      <Mass>8</Mass>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.16</ArmorRating_Heat>
+      <Insulation_Cold>18</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>240</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoLoricaHamataOne</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorBodySmithBase">
+    <defName>Apparel_DO_LoricaHamataTwo</defName>
+    <label>lorica hamata II</label>
+    <description>An improved hamata harness with denser mail and reinforced joints. It is heavier than the first pattern, but markedly more secure.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoLoricaHamataTwo_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.18</generateCommonality>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>40</Plasteel>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.22</ArmorRating_Heat>
+      <Insulation_Cold>22</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>11</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>242</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoLoricaHamataTwo</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorBodyTechBase">
+    <defName>Apparel_DO_LoricaHamataGravita</defName>
+    <label>gravita hamata</label>
+    <description>A powered mail-shell hybrid that keeps the traditional hamata profile while using spacer materials to absorb punishment far beyond conventional armor.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoLoricaHamataGravita_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.08</generateCommonality>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <Uranium>20</Uranium>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>320</MaxHitPoints>
+      <Mass>10.5</Mass>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+      <Insulation_Cold>60</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>13</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.18</MoveSpeed>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>245</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoLoricaHamataGravita</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorBodySmithBase">
+    <defName>Apparel_DO_LoricaSquamataOne</defName>
+    <label>lorica squamata I</label>
+    <description>A scale-pattern body harness that favors agility over raw mass. It is easier to move in than heavy mail, but still meant for the front line.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoLoricaSquamataOne_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.24</generateCommonality>
+    <costList>
+      <Steel>90</Steel>
+      <Cloth>30</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Mass>6</Mass>
+      <ArmorRating_Sharp>0.48</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+      <Insulation_Cold>12</Insulation_Cold>
+      <Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>9</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.06</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>246</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoLoricaSquamataOne</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorBodySmithBase">
+    <defName>Apparel_DO_LoricaSquamataTwo</defName>
+    <label>lorica squamata II</label>
+    <description>An upgraded scale harness with denser lamination and improved shoulder coverage. It keeps more mobility than mail while offering better protection than the first pattern.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoLoricaSquamataTwo_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.18</generateCommonality>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>35</Plasteel>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>33000</WorkToMake>
+      <MaxHitPoints>245</MaxHitPoints>
+      <Mass>7</Mass>
+      <ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.28</ArmorRating_Heat>
+      <Insulation_Cold>14</Insulation_Cold>
+      <Insulation_Heat>7</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.08</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>248</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoLoricaSquamataTwo</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="DO_ArmorBodyTechBase">
+    <defName>Apparel_DO_LoricaSquamataGravita</defName>
+    <label>gravita squamata</label>
+    <description>A light powered scale suit optimized for scouting and fast attack. It offers spacer-grade protection while preserving more speed than the heavier gravita hamata.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/DracoRace/Apparel/DracoLoricaSquamataGravita_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.08</generateCommonality>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <Uranium>10</Uranium>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <Insulation_Cold>54</Insulation_Cold>
+      <Insulation_Heat>9</Insulation_Heat>
+      <EquipDelay>11</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>ReconArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>250</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/DracoRace/Apparel/DracoLoricaSquamataGravita</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

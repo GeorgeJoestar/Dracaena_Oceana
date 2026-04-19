@@ -126,6 +126,7 @@
         <label>upgrade pond to improved pond</label>
         <description>Upgrade a basic pond into an improved pond with better fish cycle management.</description>
         <jobString>Upgrading fishing pond.</jobString>
+        <uiIconPath>Things/Building/Production/Half-StoneFishpond_south</uiIconPath>
         <workAmount>1800</workAmount>
         <workerClass>RimWorldProj.FishingPond.RecipeWorker_UpgradeFishingPond</workerClass>
         <workSkill>Construction</workSkill>
@@ -167,6 +168,7 @@
         <label>upgrade pond to leisure pond</label>
         <description>Upgrade an improved pond into a leisure pond that supports both production and recreation.</description>
         <jobString>Upgrading fishing pond.</jobString>
+        <uiIconPath>Things/Building/Production/StoneFishpond_south</uiIconPath>
         <workAmount>2200</workAmount>
         <workerClass>RimWorldProj.FishingPond.RecipeWorker_UpgradeFishingPond</workerClass>
         <workSkill>Construction</workSkill>
