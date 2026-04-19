@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Name="DO_FishingPondBase" ParentName="BenchBase" Abstract="True">
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Production/Fishpond1</texPath>
+            <drawSize>(2.6,2.0)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <size>(2,2)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>1</fillPercent>
+        <passability>Impassable</passability>
+        <pathCost>40</pathCost>
+        <useHitPoints>true</useHitPoints>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+        <tickerType>Normal</tickerType>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>Workshop</workTableRoomRole>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="DO_FishingPondBase">
+        <defName>FishingPond_StageOne</defName>
+        <label>basic fishing pond</label>
+        <description>A manually managed fishing pond. It is cheap to place, but catches are slow and labor intensive.</description>
+        <costList Inherit="False" />
+        <costStuffCount>0</costStuffCount>
+        <designationCategory>Dracaena_Oceana_Category</designationCategory>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Production/Fishpond1</texPath>
+            <drawSize>(2.6,2.0)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <WorkToBuild>5000</WorkToBuild>
+            <MaxHitPoints>240</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <WorkTableEfficiencyFactor>0.65</WorkTableEfficiencyFactor>
+        </statBases>
+        <comps>
+            <li Class="RimWorldProj.FishingPond.CompProperties_UpgradeableBuilding">
+                <nextStageDef>FishingPond_StageTwo</nextStageDef>
+                <upgradeRecipeDef>DO_UpgradeFishingPond_StageOneToTwo</upgradeRecipeDef>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DO_FishingPondBase">
+        <defName>FishingPond_StageTwo</defName>
+        <label>improved fishing pond</label>
+        <description>An upgraded pond with feed-and-cycle management. Colonists spend only brief time restocking, then the pond produces fish automatically.</description>
+        <costList>
+            <Steel>70</Steel>
+            <WoodLog>40</WoodLog>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Production/Fishpond2</texPath>
+            <drawSize>(2.6,2.0)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <WorkToBuild>3200</WorkToBuild>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <WorkTableEfficiencyFactor>1.15</WorkTableEfficiencyFactor>
+        </statBases>
+        <comps>
+            <li Class="RimWorldProj.FishingPond.CompProperties_UpgradeableBuilding">
+                <nextStageDef>FishingPond_StageThree</nextStageDef>
+                <upgradeRecipeDef>DO_UpgradeFishingPond_StageTwoToThree</upgradeRecipeDef>
+            </li>
+            <li Class="RimWorldProj.FishingPond.CompProperties_FishingPondProduction">
+                <cycleDurationTicks>80000</cycleDurationTicks>
+                <rollsPerCycle>2</rollsPerCycle>
+                <catches>
+                    <li>
+                        <thingDef>DO_SardineRaw</thingDef>
+                        <count>8</count>
+                        <weight>2.4</weight>
+                    </li>
+                    <li>
+                        <thingDef>DO_ShrimpRaw</thingDef>
+                        <count>6</count>
+                        <weight>2.0</weight>
+                    </li>
+                    <li>
+                        <thingDef>DO_SquidRaw</thingDef>
+                        <count>5</count>
+                        <weight>3.2</weight>
+                    </li>
+                </catches>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DO_FishingPondBase">
+        <defName>FishingPond_StageThree</defName>
+        <label>leisure fishing pond</label>
+        <description>An advanced pond with better stock management and leisure access. It keeps producing fish and can also be used for recreation.</description>
+        <costList>
+            <Steel>110</Steel>
+            <WoodLog>50</WoodLog>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Production/Fishpond3</texPath>
+            <drawSize>(2.6,2.0)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <WorkToBuild>4200</WorkToBuild>
+            <MaxHitPoints>360</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <WorkTableEfficiencyFactor>1.3</WorkTableEfficiencyFactor>
+            <JoyGainFactor>1.2</JoyGainFactor>
+        </statBases>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>RecRoom</workTableRoomRole>
+            <joyKind>DO_FishingRelax</joyKind>
+            <watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+            <watchBuildingStandRectWidth>4</watchBuildingStandRectWidth>
+            <watchBuildingInSameRoom>false</watchBuildingInSameRoom>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_WatchArea</li>
+            <li>PlaceWorker_NotUnderRoof</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <comps>
+            <li Class="RimWorldProj.FishingPond.CompProperties_FishingPondProduction">
+                <cycleDurationTicks>65000</cycleDurationTicks>
+                <rollsPerCycle>3</rollsPerCycle>
+                <catches>
+                    <li>
+                        <thingDef>DO_SardineRaw</thingDef>
+                        <count>7</count>
+                        <weight>1.4</weight>
+                    </li>
+                    <li>
+                        <thingDef>DO_ShrimpRaw</thingDef>
+                        <count>5</count>
+                        <weight>1.2</weight>
+                    </li>
+                    <li>
+                        <thingDef>DO_SquidRaw</thingDef>
+                        <count>5</count>
+                        <weight>2.1</weight>
+                    </li>
+                    <li>
+                        <thingDef>DO_OctopusRaw</thingDef>
+                        <count>4</count>
+                        <weight>2.8</weight>
+                    </li>
+                    <li>
+                        <thingDef>DO_TunaRaw</thingDef>
+                        <count>4</count>
+                        <weight>2.8</weight>
+                    </li>
+                </catches>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <DO_FishingPond_UpgradeLabel>Upgrade to {0}</DO_FishingPond_UpgradeLabel>
+  <DO_FishingPond_UpgradeDesc>Queue a construction upgrade for {0}.\n\nTarget: {1}\nUpgrade bill: {2}\n\nColonists will haul materials and complete the upgrade work.</DO_FishingPond_UpgradeDesc>
+  <DO_FishingPond_UpgradeAlreadyQueued>An upgrade bill is already queued for {0}.</DO_FishingPond_UpgradeAlreadyQueued>
+  <DO_FishingPond_UpgradeUnavailable>Upgrade recipe is currently unavailable: {0}.</DO_FishingPond_UpgradeUnavailable>
+  <DO_FishingPond_BillStackFull>{0} cannot queue more bills (stack is full).</DO_FishingPond_BillStackFull>
+  <DO_FishingPond_UpgradeQueued>Upgrade queued: {0} -> {1}.</DO_FishingPond_UpgradeQueued>
+  <DO_FishingPond_UpgradeInProgressInspect>Upgrade in progress: {0}</DO_FishingPond_UpgradeInProgressInspect>
+  <DO_FishingPond_UpgradeFailed>Upgrade failed for {0}.</DO_FishingPond_UpgradeFailed>
+  <DO_FishingPond_UpgradeCompleted>Upgrade complete: {0} -> {1}.</DO_FishingPond_UpgradeCompleted>
+  <DO_FishingPond_CycleIdleInspect>Cycle status: idle (ready for stocking).</DO_FishingPond_CycleIdleInspect>
+  <DO_FishingPond_CycleBlockedRoofedInspect>Cycle paused: pond is roofed. Remove roof to resume.</DO_FishingPond_CycleBlockedRoofedInspect>
+  <DO_FishingPond_CycleInProgressInspect>Cycle status: processing ({0} remaining).</DO_FishingPond_CycleInProgressInspect>
+  <DO_FishingPond_CycleStarted>{0} cycle started.</DO_FishingPond_CycleStarted>
+  <DO_FishingPond_CycleAlreadyActive>{0} is already processing a cycle.</DO_FishingPond_CycleAlreadyActive>
+  <DO_FishingPond_CycleFinished>{0} cycle finished and fish were produced.</DO_FishingPond_CycleFinished>
+</LanguageData>

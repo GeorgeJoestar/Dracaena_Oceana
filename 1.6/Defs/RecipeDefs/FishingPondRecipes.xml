@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef Abstract="True" Name="DO_FishingPondRecipeBase">
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workTableSpeedStat>WorkTableEfficiencyFactor</workTableSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CutStone</soundWorking>
+    </RecipeDef>
+
+    <RecipeDef ParentName="DO_FishingPondRecipeBase">
+        <defName>DO_CatchSardine_StageOne</defName>
+        <label>manual catch: sardine</label>
+        <description>Catch sardines manually from a basic pond. This method is labor heavy and inefficient.</description>
+        <jobString>Catching sardines manually.</jobString>
+        <workAmount>2800</workAmount>
+        <workerClass>RimWorldProj.FishingPond.RecipeWorker_FishingPondOutdoorOnly</workerClass>
+        <workSkill>Animals</workSkill>
+        <requiredGiverWorkType>Handling</requiredGiverWorkType>
+        <skillRequirements>
+            <Animals>1</Animals>
+        </skillRequirements>
+        <products>
+            <DO_SardineRaw>10</DO_SardineRaw>
+        </products>
+        <recipeUsers>
+            <li>FishingPond_StageOne</li>
+        </recipeUsers>
+        <displayPriority>900</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="DO_FishingPondRecipeBase">
+        <defName>DO_CatchShrimp_StageOne</defName>
+        <label>manual catch: shrimp</label>
+        <description>Catch shrimp manually from a basic pond. This method is labor heavy and inefficient.</description>
+        <jobString>Catching shrimp manually.</jobString>
+        <workAmount>3000</workAmount>
+        <workerClass>RimWorldProj.FishingPond.RecipeWorker_FishingPondOutdoorOnly</workerClass>
+        <workSkill>Animals</workSkill>
+        <requiredGiverWorkType>Handling</requiredGiverWorkType>
+        <skillRequirements>
+            <Animals>1</Animals>
+        </skillRequirements>
+        <products>
+            <DO_ShrimpRaw>8</DO_ShrimpRaw>
+        </products>
+        <recipeUsers>
+            <li>FishingPond_StageOne</li>
+        </recipeUsers>
+        <displayPriority>890</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="DO_FishingPondRecipeBase">
+        <defName>DO_StartCycle_StageTwo</defName>
+        <label>stock pond cycle</label>
+        <description>Add feed and reset nets in the improved pond. After this short maintenance, fish production continues automatically.</description>
+        <jobString>Stocking improved pond cycle.</jobString>
+        <workAmount>320</workAmount>
+        <workerClass>RimWorldProj.FishingPond.RecipeWorker_StartPondCycle</workerClass>
+        <workSkill>Animals</workSkill>
+        <requiredGiverWorkType>Handling</requiredGiverWorkType>
+        <skillRequirements>
+            <Animals>5</Animals>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WheatEar</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hay</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+        </ingredients>
+        <recipeUsers>
+            <li>FishingPond_StageTwo</li>
+        </recipeUsers>
+        <displayPriority>880</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="DO_FishingPondRecipeBase">
+        <defName>DO_StartCycle_StageThree</defName>
+        <label>stock advanced pond cycle</label>
+        <description>Perform a brief restock on the leisure pond to trigger an advanced automated fishing cycle.</description>
+        <jobString>Stocking advanced pond cycle.</jobString>
+        <workAmount>220</workAmount>
+        <workerClass>RimWorldProj.FishingPond.RecipeWorker_StartPondCycle</workerClass>
+        <workSkill>Animals</workSkill>
+        <requiredGiverWorkType>Handling</requiredGiverWorkType>
+        <skillRequirements>
+            <Animals>5</Animals>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WheatEar</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hay</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <recipeUsers>
+            <li>FishingPond_StageThree</li>
+        </recipeUsers>
+        <displayPriority>870</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="DO_FishingPondRecipeBase">
+        <defName>DO_UpgradeFishingPond_StageOneToTwo</defName>
+        <label>upgrade pond to improved pond</label>
+        <description>Upgrade a basic pond into an improved pond with better fish cycle management.</description>
+        <jobString>Upgrading fishing pond.</jobString>
+        <workAmount>1800</workAmount>
+        <workerClass>RimWorldProj.FishingPond.RecipeWorker_UpgradeFishingPond</workerClass>
+        <workSkill>Construction</workSkill>
+        <requiredGiverWorkType>Construction</requiredGiverWorkType>
+        <skillRequirements>
+            <Construction>5</Construction>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <recipeUsers>
+            <li>FishingPond_StageOne</li>
+        </recipeUsers>
+        <modExtensions>
+            <li Class="RimWorldProj.FishingPond.DefModExtension_UpgradeRecipe">
+                <targetStageDef>FishingPond_StageTwo</targetStageDef>
+            </li>
+        </modExtensions>
+        <displayPriority>2000</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="DO_FishingPondRecipeBase">
+        <defName>DO_UpgradeFishingPond_StageTwoToThree</defName>
+        <label>upgrade pond to leisure pond</label>
+        <description>Upgrade an improved pond into a leisure pond that supports both production and recreation.</description>
+        <jobString>Upgrading fishing pond.</jobString>
+        <workAmount>2200</workAmount>
+        <workerClass>RimWorldProj.FishingPond.RecipeWorker_UpgradeFishingPond</workerClass>
+        <workSkill>Construction</workSkill>
+        <requiredGiverWorkType>Construction</requiredGiverWorkType>
+        <skillRequirements>
+            <Construction>8</Construction>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <recipeUsers>
+            <li>FishingPond_StageTwo</li>
+        </recipeUsers>
+        <modExtensions>
+            <li Class="RimWorldProj.FishingPond.DefModExtension_UpgradeRecipe">
+                <targetStageDef>FishingPond_StageThree</targetStageDef>
+            </li>
+        </modExtensions>
+        <displayPriority>1990</displayPriority>
+    </RecipeDef>
+</Defs>

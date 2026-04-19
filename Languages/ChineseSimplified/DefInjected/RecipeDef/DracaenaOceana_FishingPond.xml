@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <DO_CatchSardine_StageOne.label>手动捕捞：沙丁鱼</DO_CatchSardine_StageOne.label>
+  <DO_CatchSardine_StageOne.description>在基础钓鱼池手动捕捞沙丁鱼。效率低且耗时。</DO_CatchSardine_StageOne.description>
+  <DO_CatchSardine_StageOne.jobString>正在手动捕捞沙丁鱼。</DO_CatchSardine_StageOne.jobString>
+  <DO_CatchShrimp_StageOne.label>手动捕捞：虾</DO_CatchShrimp_StageOne.label>
+  <DO_CatchShrimp_StageOne.description>在基础钓鱼池手动捕捞虾。效率低且耗时。</DO_CatchShrimp_StageOne.description>
+  <DO_CatchShrimp_StageOne.jobString>正在手动捕捞虾。</DO_CatchShrimp_StageOne.jobString>
+  <DO_StartCycle_StageTwo.label>投料启动池塘周期</DO_StartCycle_StageTwo.label>
+  <DO_StartCycle_StageTwo.description>为改良池塘补充饲料并整理渔网，随后自动进入产鱼周期。</DO_StartCycle_StageTwo.description>
+  <DO_StartCycle_StageTwo.jobString>正在为改良池塘投料。</DO_StartCycle_StageTwo.jobString>
+  <DO_StartCycle_StageThree.label>投料启动高级池塘周期</DO_StartCycle_StageThree.label>
+  <DO_StartCycle_StageThree.description>对休闲钓鱼池进行短时补料维护，启动高级自动产鱼周期。</DO_StartCycle_StageThree.description>
+  <DO_StartCycle_StageThree.jobString>正在为高级池塘投料。</DO_StartCycle_StageThree.jobString>
+  <DO_UpgradeFishingPond_StageOneToTwo.label>升级为改良钓鱼池</DO_UpgradeFishingPond_StageOneToTwo.label>
+  <DO_UpgradeFishingPond_StageOneToTwo.description>将基础钓鱼池升级为改良钓鱼池，提高生产效率。</DO_UpgradeFishingPond_StageOneToTwo.description>
+  <DO_UpgradeFishingPond_StageOneToTwo.jobString>正在升级钓鱼池。</DO_UpgradeFishingPond_StageOneToTwo.jobString>
+  <DO_UpgradeFishingPond_StageTwoToThree.label>升级为休闲钓鱼池</DO_UpgradeFishingPond_StageTwoToThree.label>
+  <DO_UpgradeFishingPond_StageTwoToThree.description>将改良钓鱼池升级为休闲钓鱼池，解锁娱乐用途并增强渔获。</DO_UpgradeFishingPond_StageTwoToThree.description>
+  <DO_UpgradeFishingPond_StageTwoToThree.jobString>正在升级钓鱼池。</DO_UpgradeFishingPond_StageTwoToThree.jobString>
+</LanguageData>
+

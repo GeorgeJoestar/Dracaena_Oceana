@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <JoyKindDef>
+        <defName>DO_FishingRelax</defName>
+        <label>pond fishing</label>
+    </JoyKindDef>
+
+    <JoyGiverDef>
+        <defName>DO_RelaxAtFishingPond</defName>
+        <giverClass>JoyGiver_WatchBuilding</giverClass>
+        <baseChance>2.1</baseChance>
+        <thingDefs>
+            <li>FishingPond_StageThree</li>
+        </thingDefs>
+        <jobDef>DO_FishingPondRelax</jobDef>
+        <joyKind>DO_FishingRelax</joyKind>
+        <unroofedOnly>true</unroofedOnly>
+        <requiredCapacities>
+            <li>Sight</li>
+        </requiredCapacities>
+    </JoyGiverDef>
+</Defs>

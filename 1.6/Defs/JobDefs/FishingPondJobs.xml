@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <JobDef>
+        <defName>DO_FishingPondRelax</defName>
+        <driverClass>JobDriver_WatchBuilding</driverClass>
+        <reportString>relaxing by the fishing pond.</reportString>
+        <joyDuration>4000</joyDuration>
+        <joyMaxParticipants>1</joyMaxParticipants>
+        <joyKind>DO_FishingRelax</joyKind>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>
+

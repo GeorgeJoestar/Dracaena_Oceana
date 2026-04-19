@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <DO_FishingPond_UpgradeLabel>升级为 {0}</DO_FishingPond_UpgradeLabel>
+  <DO_FishingPond_UpgradeDesc>为 {0} 排入升级施工。\n\n目标阶段：{1}\n升级工单：{2}\n\n殖民者会搬运材料并完成施工。</DO_FishingPond_UpgradeDesc>
+  <DO_FishingPond_UpgradeAlreadyQueued>{0} 已有升级工单在队列中。</DO_FishingPond_UpgradeAlreadyQueued>
+  <DO_FishingPond_UpgradeUnavailable>升级配方当前不可用：{0}。</DO_FishingPond_UpgradeUnavailable>
+  <DO_FishingPond_BillStackFull>{0} 的工单队列已满。</DO_FishingPond_BillStackFull>
+  <DO_FishingPond_UpgradeQueued>已排入升级：{0} -> {1}。</DO_FishingPond_UpgradeQueued>
+  <DO_FishingPond_UpgradeInProgressInspect>升级施工中：{0}</DO_FishingPond_UpgradeInProgressInspect>
+  <DO_FishingPond_UpgradeFailed>{0} 升级失败。</DO_FishingPond_UpgradeFailed>
+  <DO_FishingPond_UpgradeCompleted>升级完成：{0} -> {1}。</DO_FishingPond_UpgradeCompleted>
+  <DO_FishingPond_CycleIdleInspect>周期状态：空闲（可投料）。</DO_FishingPond_CycleIdleInspect>
+  <DO_FishingPond_CycleInProgressInspect>周期状态：处理中（剩余 {0}）。</DO_FishingPond_CycleInProgressInspect>
+  <DO_FishingPond_CycleStarted>{0} 已启动生产周期。</DO_FishingPond_CycleStarted>
+  <DO_FishingPond_CycleAlreadyActive>{0} 当前已在生产周期中。</DO_FishingPond_CycleAlreadyActive>
+  <DO_FishingPond_CycleFinished>{0} 周期结束，已产出渔获。</DO_FishingPond_CycleFinished>
+  <DO_FishingPond_CycleBlockedRoofedInspect>周期已暂停：鱼塘被屋顶覆盖，移除屋顶后继续。</DO_FishingPond_CycleBlockedRoofedInspect>
+</LanguageData>
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <FishingPond_StageOne.label>基础钓鱼池</FishingPond_StageOne.label>
+  <FishingPond_StageOne.description>手动维护的基础池塘。放置便宜，但渔获效率低且非常耗费劳力。</FishingPond_StageOne.description>
+  <FishingPond_StageTwo.label>改良钓鱼池</FishingPond_StageTwo.label>
+  <FishingPond_StageTwo.description>升级后的池塘，可通过投料进入自动生产周期。殖民者只需少量维护时间。</FishingPond_StageTwo.description>
+  <FishingPond_StageThree.label>休闲钓鱼池</FishingPond_StageThree.label>
+  <FishingPond_StageThree.description>高级池塘，兼具稳定产鱼与娱乐用途。殖民者可以在池边放松。</FishingPond_StageThree.description>
+  <DO_SardineRaw.label>沙丁鱼</DO_SardineRaw.label>
+  <DO_SardineRaw.description>池塘中常见的小型渔获，产量稳定。</DO_SardineRaw.description>
+  <DO_ShrimpRaw.label>虾</DO_ShrimpRaw.label>
+  <DO_ShrimpRaw.description>池塘产出的虾类，可直接烹饪。</DO_ShrimpRaw.description>
+  <DO_SquidRaw.label>鱿鱼</DO_SquidRaw.label>
+  <DO_SquidRaw.description>改良池塘可获得的中级渔获，营养和价值更高。</DO_SquidRaw.description>
+  <DO_OctopusRaw.label>章鱼</DO_OctopusRaw.label>
+  <DO_OctopusRaw.description>高级池塘可获得的稀有渔获，价值较高。</DO_OctopusRaw.description>
+  <DO_TunaRaw.label>金枪鱼</DO_TunaRaw.label>
+  <DO_TunaRaw.description>高级池塘可获得的高价值渔获，营养丰富。</DO_TunaRaw.description>
+</LanguageData>
+

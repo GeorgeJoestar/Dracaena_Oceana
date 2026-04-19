@@ -35,5 +35,11 @@
         <label>wheat meals</label>
         <parent>DO_ItemCategory_WheatLine</parent>
     </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DO_ItemCategory_Fisheries</defName>
+        <label>fisheries</label>
+        <parent>DO_ItemCategory_Root</parent>
+    </ThingCategoryDef>
 </Defs>
 

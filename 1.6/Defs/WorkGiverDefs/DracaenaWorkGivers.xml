@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <WorkGiverDef>
+        <defName>DO_DoBills_DracaenaCooking</defName>
+        <label>cook meals at dracaena facilities</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Cooking</workType>
+        <priorityInType>96</priorityInType>
+        <fixedBillGiverDefs>
+            <li>Drac_bench_stove</li>
+            <li>FermentationBucket</li>
+            <li>Oven</li>
+        </fixedBillGiverDefs>
+        <verb>cook at</verb>
+        <gerund>cooking at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>DO_DoBills_DracaenaCrafting</defName>
+        <label>work at dracaena crafting facilities</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>98</priorityInType>
+        <fixedBillGiverDefs>
+            <li>Drac_bench_herb</li>
+        </fixedBillGiverDefs>
+        <verb>work at</verb>
+        <gerund>working at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>DO_DoBills_FishingPondHandling</defName>
+        <label>handle fishing pond tasks</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Handling</workType>
+        <priorityInType>92</priorityInType>
+        <fixedBillGiverDefs>
+            <li>FishingPond_StageOne</li>
+            <li>FishingPond_StageTwo</li>
+            <li>FishingPond_StageThree</li>
+        </fixedBillGiverDefs>
+        <verb>handle</verb>
+        <gerund>handling</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>DO_DoBills_FishingPondConstruction</defName>
+        <label>upgrade fishing ponds</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Construction</workType>
+        <priorityInType>88</priorityInType>
+        <fixedBillGiverDefs>
+            <li>FishingPond_StageOne</li>
+            <li>FishingPond_StageTwo</li>
+        </fixedBillGiverDefs>
+        <verb>upgrade</verb>
+        <gerund>upgrading</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>DO_DoBills_DracaenaSmithing</defName>
+        <label>smith at dracaena smithy</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Smithing</workType>
+        <priorityInType>112</priorityInType>
+        <fixedBillGiverDefs>
+            <li>Drac_bench_smithy</li>
+        </fixedBillGiverDefs>
+        <verb>smith at</verb>
+        <gerund>smithing at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>DO_DoBills_DracaenaTailoring</defName>
+        <label>tailor at dracaena tailoring bench</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Tailoring</workType>
+        <priorityInType>108</priorityInType>
+        <fixedBillGiverDefs>
+            <li>Drac_bench_tailor</li>
+        </fixedBillGiverDefs>
+        <verb>tailor at</verb>
+        <gerund>tailoring at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+</Defs>

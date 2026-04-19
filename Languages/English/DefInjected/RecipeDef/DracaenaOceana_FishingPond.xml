@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <DO_CatchSardine_StageOne.label>manual catch: sardine</DO_CatchSardine_StageOne.label>
+  <DO_CatchSardine_StageOne.description>Catch sardines manually from a basic pond. This method is labor heavy and inefficient.</DO_CatchSardine_StageOne.description>
+  <DO_CatchSardine_StageOne.jobString>Catching sardines manually.</DO_CatchSardine_StageOne.jobString>
+  <DO_CatchShrimp_StageOne.label>manual catch: shrimp</DO_CatchShrimp_StageOne.label>
+  <DO_CatchShrimp_StageOne.description>Catch shrimp manually from a basic pond. This method is labor heavy and inefficient.</DO_CatchShrimp_StageOne.description>
+  <DO_CatchShrimp_StageOne.jobString>Catching shrimp manually.</DO_CatchShrimp_StageOne.jobString>
+  <DO_StartCycle_StageTwo.label>stock pond cycle</DO_StartCycle_StageTwo.label>
+  <DO_StartCycle_StageTwo.description>Add feed and reset nets in the improved pond. After this short maintenance, fish production continues automatically.</DO_StartCycle_StageTwo.description>
+  <DO_StartCycle_StageTwo.jobString>Stocking improved pond cycle.</DO_StartCycle_StageTwo.jobString>
+  <DO_StartCycle_StageThree.label>stock advanced pond cycle</DO_StartCycle_StageThree.label>
+  <DO_StartCycle_StageThree.description>Perform a brief restock on the leisure pond to trigger an advanced automated fishing cycle.</DO_StartCycle_StageThree.description>
+  <DO_StartCycle_StageThree.jobString>Stocking advanced pond cycle.</DO_StartCycle_StageThree.jobString>
+  <DO_UpgradeFishingPond_StageOneToTwo.label>upgrade pond to improved pond</DO_UpgradeFishingPond_StageOneToTwo.label>
+  <DO_UpgradeFishingPond_StageOneToTwo.description>Upgrade a basic pond into an improved pond with better fish cycle management.</DO_UpgradeFishingPond_StageOneToTwo.description>
+  <DO_UpgradeFishingPond_StageOneToTwo.jobString>Upgrading fishing pond.</DO_UpgradeFishingPond_StageOneToTwo.jobString>
+  <DO_UpgradeFishingPond_StageTwoToThree.label>upgrade pond to leisure pond</DO_UpgradeFishingPond_StageTwoToThree.label>
+  <DO_UpgradeFishingPond_StageTwoToThree.description>Upgrade an improved pond into a leisure pond that supports both production and recreation.</DO_UpgradeFishingPond_StageTwoToThree.description>
+  <DO_UpgradeFishingPond_StageTwoToThree.jobString>Upgrading fishing pond.</DO_UpgradeFishingPond_StageTwoToThree.jobString>
+</LanguageData>
+

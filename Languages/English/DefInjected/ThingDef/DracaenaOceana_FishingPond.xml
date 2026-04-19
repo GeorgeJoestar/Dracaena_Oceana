@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <FishingPond_StageOne.label>basic fishing pond</FishingPond_StageOne.label>
+  <FishingPond_StageOne.description>A manually managed fishing pond. It is cheap to place, but catches are slow and labor intensive.</FishingPond_StageOne.description>
+  <FishingPond_StageTwo.label>improved fishing pond</FishingPond_StageTwo.label>
+  <FishingPond_StageTwo.description>An upgraded pond with feed-and-cycle management. Colonists spend only brief time restocking, then the pond produces fish automatically.</FishingPond_StageTwo.description>
+  <FishingPond_StageThree.label>leisure fishing pond</FishingPond_StageThree.label>
+  <FishingPond_StageThree.description>An advanced pond with better stock management and leisure access. It keeps producing fish and can also be used for recreation.</FishingPond_StageThree.description>
+  <DO_SardineRaw.label>sardine</DO_SardineRaw.label>
+  <DO_SardineRaw.description>Fresh sardine from the pond. Small but plentiful fish for simple meals.</DO_SardineRaw.description>
+  <DO_ShrimpRaw.label>shrimp</DO_ShrimpRaw.label>
+  <DO_ShrimpRaw.description>Pond shrimp. Delicate seafood that can be eaten raw in emergencies or cooked into meals.</DO_ShrimpRaw.description>
+  <DO_SquidRaw.label>squid</DO_SquidRaw.label>
+  <DO_SquidRaw.description>Squid harvested from a stocked improved pond. Dense and useful for higher-value food processing.</DO_SquidRaw.description>
+  <DO_OctopusRaw.label>octopus</DO_OctopusRaw.label>
+  <DO_OctopusRaw.description>A large octopus catch from an advanced leisure pond. Rare and valuable seafood.</DO_OctopusRaw.description>
+  <DO_TunaRaw.label>tuna</DO_TunaRaw.label>
+  <DO_TunaRaw.description>Premium tuna from an advanced pond cycle. High nutrition and high market demand.</DO_TunaRaw.description>
+</LanguageData>
+
